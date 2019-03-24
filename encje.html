@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Damian Zapalski" />
+  <meta name="generator" content="Atom" />
+  <meta name="keywords" content="kurs, html, css" />
+  <title>Kurs HTML &amp; CSS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
+        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
+        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
+      </div>
+      <div class="menu_top">
+        <ul>
+          <li><a href="index.html" id="a_active">STRONA GŁÓWNA</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="box">
+      <div class="left">
+        <div class="menu_left">
+          <h4>KURS HTML &amp; CSS</h4>
+          <ul>
+            <li><a href="index.html">Wprowadzenie</a></li>
+            <li><a href="edytor.html">Od czego zacząć</a></li>
+            <li><a href="validator.html">Validator</a></li>
+            <li><a href="oznaczenia.html">Oznaczenia</a></li>
+            <li><a href="zasady.html">5 zasad HTML</a></li>
+            <li><a href="encje.html" id="a_active2">Encje</a></li>
+          </ul>
+      </div>
+    </div>
+      <div class="main">
+        <h2>Encje</h2>
+        <p><strong>Encja</strong> - nazwa znaku zastępująca go. Pozwala wyświetlić na stronie internetowej znaki, których nie ma na klawiaturze lub takie, które są przetwarzane przez przeglądarkę i
+          przy normalnym zapisie znikają.<br /><br />
+          Przykład:<br />
+          znaki <span class="tag">&lt; &gt;</span> zostałyby zinterpretowane przez przeglądarkę jako nawiasy ostre przy znaczniku i zniknęłyby. Żeby je wyświetlić użyłem specjalnego kodu encji -
+          <span class="tag">&amp;lt;</span> i <span class="tag">&amp;gt;</span><br /><br />
+          Żeby wyświetlić fragmenty kodu, które zobaczysz na stronie musiałem zamienić wszystkie nawiasy ostre na encje. Ułatwiłem sobie to zadanie, korzystając z <a href="https://encje.odjechani.com.pl/">generatora encji</a><br /><br />
+          <h2>Przykładowe encje</h2>
+          <table class="encje">
+          <tr>
+          <th>Wynik</th>
+          <th>Opis</th>
+          <th>Encja symboliczna</th>
+          <th>Encja dziesiętna</th>
+          </tr>
+          <tr style="background-color:#f1f1f1;">
+          <td>&nbsp;</td>
+          <td>niełamiąca spacja</td>
+          <td>&amp;nbsp;</td>
+          <td>&amp;#160;</td>
+          </tr>
+          <tr>
+          <td>&lt;</td>
+          <td>mniejsze niż</td>
+          <td>&amp;lt;</td>
+          <td>&amp;#60;</td>
+          </tr>
+          <tr style="background-color:#f1f1f1;">
+          <td>&gt;</td>
+          <td>większe niż</td>
+          <td>&amp;gt;</td>
+          <td>&amp;#62;</td>
+          </tr>
+          <tr>
+          <td>&amp;</td>
+          <td>ampersand</td>
+          <td>&amp;amp;</td>
+          <td>&amp;#38;</td>
+          </tr>
+          <tr style="background-color:#f1f1f1;">
+          <td>"</td>
+          <td>cudzysłów</td>
+          <td>&amp;quot;</td>
+          <td>&amp;#34;</td>
+          </tr>
+          <tr>
+          <td>'</td>
+          <td>apostrof</td>
+          <td>&amp;apos;</td>
+          <td>&amp;#39;</td>
+          </tr>
+          <tr style="background-color:#f1f1f1;">
+          <td>&cent;</td>
+          <td>cent</td>
+          <td>&amp;cent;</td>
+          <td>&amp;#162;</td>
+          </tr>
+          <tr>
+          <td>&pound;</td>
+          <td>funt</td>
+          <td>&amp;pound;</td>
+          <td>&amp;#163;</td>
+          </tr>
+          <tr style="background-color:#f1f1f1;">
+          <td>&yen;</td>
+          <td>jen</td>
+          <td>&amp;yen;</td>
+          <td>&amp;#165;</td>
+          </tr>
+          <tr>
+          <td>&euro;</td>
+          <td>euro</td>
+          <td>&amp;euro;</td>
+          <td>&amp;#8364;</td>
+          </tr>
+          <tr style="background-color:#f1f1f1;">
+          <td>&copy;</td>
+          <td>copyright</td>
+          <td>&amp;copy;</td>
+          <td>&amp;#169;</td>
+          </tr>
+          <tr>
+          <td>&reg;</td>
+          <td>registered</td>
+          <td>&amp;reg;</td>
+          <td>&amp;#174;</td>
+          </tr>
+        </table><br />
+          <em>Więcej o encjach <a href="https://www.w3schools.com/html/html_entities.asp">https://www.w3schools.com/html/html_entities.asp</a></em><br />
+          <em>Więcej encji<a href="https://dev.w3.org/html5/html-author/charref">https://dev.w3.org/html5/html-author/charref</a></em>
+      </div>
+    </div>
+    <footer>
+      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
+      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Damian Zapalski" />
+  <meta name="generator" content="Atom" />
+  <meta name="keywords" content="kurs, html, css" />
+  <title>Kurs HTML &amp; CSS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
+        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
+        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
+      </div>
+      <div class="menu_top">
+        <ul>
+          <li><a href="index.html">STRONA GŁÓWNA</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html" id="a_active">CSS</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="box">
+      <div class="left">
+        <div class="menu_left">
+          <h4>CSS</h4>
+          <ul>
+            <li><a href="css.html">Czym jest CSS?</a></li>
+            <li><a href="selektory.html">Selektory</a></li>
+            <li><a href="osadzanie.html">Osadzanie CSS'a</a></li>
+            <li><a href="przyklady.html">Przykłady</a></li>
+            <li><a href="kaskadowosc.html">Kaskadowość</a></li>
+            <li><a href="komentarzecss.html">Komentarze</a></li>
+            <li><a href="pudelko.html">Model pudełkowy</a></li>
+            <li><a href="pozycjonowanie.html">Pozycjonowanie</a></li>
+            <li><a href="tlo.html">Grafika jako tło</a></li>
+            <li><a href="gradient.html">Gradienty</a></li>
+            <li><a href="przeksztalcenia.html" id="a_active2">Przekształcenia</a></li>
+            <li><a href="animacje.html">Animacje</a></li>
+          </ul>
+      </div>
+    </div>
+      <div class="main">
+        <h2>Przekształcenia</h2>
+<div class="example">
+  <h3>Przykład 1</h3>
+  <pre>
+&lt;div&gt;&lt;/div&gt;</pre>
+  <pre class="half2">
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transition: width 2s, height 3s;
+  transition: width 2s, height 3s;
+}
+div:hover {
+  width: 300px;
+  height: 50px;
+}</pre>
+Efekt:<br /><div style="height:100px;">
+  <div class="przeksztalcenie1"></div>
+  </div><br />
+</div>
+<span class="tag">transition: właściwość czas, właściwość2 czas2;</span> - składnia przekształcenia<br />
+<div class="example">
+  <h3>Przykład 2</h3>
+  <pre>
+&lt;div&gt;&lt;/div&gt;</pre>
+  <pre class="half2">
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition-property: width; /* Właściwość ulegająca przekształceniu */
+  transition-duration: 2s; /* Czas trwania */
+  transition-timing-function: linear; /* Regularność */
+  transition-delay: 1s; /* Opóźnienie */
+}
+div:hover {
+  width: 300px;
+}</pre>
+Efekt:<br /><div style="height:100px;">
+  <div class="przeksztalcenie2"></div>
+  </div><br />
+</div>
+<div class="example">
+  <h3>Przykład 3</h3>
+  <pre>
+&lt;div&gt;&lt;/div&gt;
+&lt;div id="obrocony"&gt;&lt;/div&gt;</pre>
+  <pre class="half2">
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+div#obrocony {
+  transform: rotate(20deg);
+}</pre>
+Efekt:<br />
+  <div style="width: 300px;height: 100px;background-color: yellow;border: 1px solid black;">Normalny div</div>
+  <div style="width: 300px;height: 100px;background-color: yellow;border: 1px solid black;-ms-transform: rotate(20deg);-webkit-transform: rotate(20deg);transform: rotate(20deg);">Div obrócony</div>
+<br /><br /><br />
+</div>
+<span class="tag">transform: akcja(wartość);</span> - składnia przekształcenia<br /><br />
+<em>Więcej o przekształceniach <a href="https://www.w3schools.com/css/css3_transitions.asp">https://www.w3schools.com/css/css3_transitions.asp</a>, <a href="https://www.w3schools.com/css/css3_2dtransforms.asp">https://www.w3schools.com/css/css3_2dtransforms.asp</a></em>
+</div>
+      </div>
+    <footer>
+      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
+      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+    </footer>
+  </div>
+</body>
+</html>

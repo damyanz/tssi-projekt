@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Damian Zapalski" />
+  <meta name="generator" content="Atom" />
+  <meta name="keywords" content="kurs, html, css" />
+  <title>Kurs HTML &amp; CSS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
+        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
+        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
+      </div>
+      <div class="menu_top">
+        <ul>
+          <li><a href="index.html">STRONA GŁÓWNA</a></li>
+          <li><a href="html.html"  id="a_active">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="box">
+      <div class="left">
+        <div class="menu_left">
+          <h4>HTML</h4>
+          <ul>
+            <li><a href="html.html">Czym jest HTML?</a></li>
+            <li><a href="struktura.html">Podstawowa struktura</a></li>
+            <li><a href="znaczniki.html">Znaczniki</a></li>
+            <li><a href="komentarze.html">Komentarze</a></li>
+            <li><a href="meta.html">&lt;meta&gt; i &lt;title&gt;</a></li>
+            <li><a href="listy.html">Listy</a></li>
+            <li><a href="zagniezdzona.html">Lista zagnieżdżona</a></li>
+            <li><a href="definicji.html">Lista definicji</a></li>
+            <li><a href="grafika.html">Grafika</a></li>
+            <li><a href="hiperlacza.html">Hiperłącza i kotwice</a></li>
+            <li><a href="mapa.html" id="a_active2">Mapa odsyłaczy</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a href="uklady.html">Układy stron</a></li>
+            <li><a href="pioNIEwe.html">Menu pionowe</a></li>
+            <li><a href="poziome.html">Menu poziome</a></li>
+            <li><a href="formularze.html">Formularze</a></li>
+            <li><a href="grupowany.html">Formularz grupowany</a></li>
+            <li><a href="plynne.html">Układy płynne</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="hybrydowe.html">Układy hybrydowe</a></li>
+          </ul>
+      </div>
+    </div>
+      <div class="main">
+        <h2>Muapa odsyłaczy</h2>
+        <p>Ciekawą opcją HTML jest mapa odsyłaczy. Pozwala ona na stworzenie obszarów na obrazku, które będą hiperłączami.
+          <div class="example">
+            <h3>Mapa odsyłaczy</h3>
+            <pre>
+&lt;img src=&quot;img/planety.gif&quot; alt=&quot;Planety&quot; usemap=&quot;#planetmap&quot;&gt;
+&lt;map name=&quot;planetmap&quot;&gt;
+  &lt;area shape=&quot;rect&quot; coords=&quot;0,0,82,126&quot; alt=&quot;Słońce&quot; href=&quot;img/slonce.gif&quot;&gt;
+  &lt;area shape=&quot;circle&quot; coords=&quot;90,58,3&quot; alt=&quot;Merkury&quot; href=&quot;img/merkury.gif&quot;&gt;
+  &lt;area shape=&quot;circle&quot; coords=&quot;124,58,8&quot; alt=&quot;Wenus&quot; href=&quot;img/wenus.gif&quot;&gt;
+&lt;/map&gt;</pre>
+Mapa układu słonecznego:<br />
+<img src="img/planety.gif" alt="Planety" usemap="#planetmap">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" href="img/slonce.gif" alt="Sun">
+  <area shape="circle" coords="90,58,3" href="img/merkury.gif" alt="Mercury">
+  <area shape="circle" coords="124,58,8" href="img/wenus.gif" alt="Venus">
+</map>
+          </div>
+          <span class="tag">&lt;map&gt;</span> - znacznik definiujący mapę odsyłaczy<br />
+          <span class="tag">&lt;area&gt;</span> - pojedynczy, klikalny obszar na obrazku<br />
+          <span class="tag">name="..."</span> - obowiązkowy atrybut nazwy mapy<br />
+          <span class="tag">alt="..."</span> - obowiązkowy atrybut, wyświetlający tekst, gdy obszar jest niedostępny<br />
+          <span class="tag">usemap="..."</span> - atrybut wskazujący na mapę do danego obrazka<br />
+          <span class="tag">shape="default|rect|circle|poly"</span> - kształt pojedynczego obszaru<br />
+          <span class="tag">coords="x<sub>1</sub>,y<sub>1</sub>,x<sub>2</sub>,y<sub>2</sub>"</span> - współrzędne dwóch przeciwległych boków prostokąta<br />
+          <span class="tag">coords="x,y,r"</span> - współrzędne środka i długość promienia okręgu<br />
+          <p>Mapę odsyłaczy można tworzyć ręcznie lub użyć generatora, np.: <a href="http://imagemap-generator.dariodomi.de/">http://imagemap-generator.dariodomi.de/</a>
+            <div class="example">
+              <h3>Mapa odsyłaczy utworzona generatorem</h3>
+              <pre>
+&lt;img src=&quot;img/znaki.png&quot; alt=&quot;znaki&quot; usemap=&quot;#Map&quot; /&gt;
+&lt;map name=&quot;Map&quot; id=&quot;Map&quot;&gt;
+    &lt;area href=&quot;uzupelniajace.htm&quot; shape=&quot;rect&quot; coords=&quot;383,31,499,100&quot;
+     alt="uzupełniający" /&gt;
+    &lt;area href=&quot;zakazu.htm&quot; shape=&quot;poly&quot;
+     coords=&quot;359,39,378,43,382,48,383,101,388,103,
+     374,114,360,115,331,98,324,76,337,46&quot; alt="zakazu" /&gt;
+    &lt;area href=&quot;informacyjne.htm&quot; shape=&quot;poly&quot;
+     coords=&quot;284,47,317,77,288,110,255,78&quot; alt="info" /&gt;
+    &lt;area href=&quot;informacyjne.htm&quot; shape=&quot;rect&quot; coords=&quot;247,5,281,45&quot;
+     alt="info" /&gt;
+    &lt;area href=&quot;informacyjne.htm&quot; shape=&quot;poly&quot; coords=&quot;250,48,277,49,251,75&quot;
+     alt="info" /&gt;
+    &lt;area href=&quot;informacyjne.htm&quot; shape=&quot;poly&quot;
+     coords=&quot;242,41,236,47,234,64,246,80,249,51&quot; alt="info" /&gt;
+    &lt;area href=&quot;zakazu.htm&quot; shape=&quot;poly&quot; coords=&quot;216,33,233,52,219,69,202,52&quot;
+     alt="zakazu" /&gt;
+    &lt;area href=&quot;informacyjne.htm&quot; shape=&quot;rect&quot; coords=&quot;168,26,199,58&quot;
+     alt="info" /&gt;
+    &lt;area href=&quot;zakazu.htm&quot; shape=&quot;poly&quot;
+     coords=&quot;86,25,99,31,104,43,98,58,86,65,72,57,69,44,74,29&quot; alt="zakazu" /&gt;
+    &lt;area href=&quot;uzupelniajace.htm&quot; shape=&quot;rect&quot; coords=&quot;48,1,80,24&quot;
+     alt="uzupełniający" /&gt;
+&lt;/map&gt;</pre>
+              <img src="img/znaki.png" alt="znaki" usemap="#Map" />
+                <map name="Map" id="Map">
+                    <area href="http://znaki-drogowe.dlakierowcy.info/s/4089/77045-Znaki-uzupelniajace.htm" shape="rect" coords="383,31,499,100" alt="uzupełniający" />
+                    <area href="http://znaki-drogowe.dlakierowcy.info/s/4089/77041-Znaki-zakazu.htm" shape="poly" coords="359,39,378,43,382,48,383,101,388,103,374,114,360,115,331,98,324,76,337,46" alt="zakazu" />
+                    <area href="http://znaki-drogowe.dlakierowcy.info/s/4089/77043-Znaki-informacyjne.htm" shape="poly" coords="284,47,317,77,288,110,255,78" alt="info" />
+                    <area href="http://znaki-drogowe.dlakierowcy.info/s/4089/77043-Znaki-informacyjne.htm" shape="rect" coords="247,5,281,45" alt="info" />
+                    <area href="http://znaki-drogowe.dlakierowcy.info/s/4089/77043-Znaki-informacyjne.htm" shape="poly" coords="250,48,277,49,251,75" alt="info" />
+                    <area href="http://znaki-drogowe.dlakierowcy.info/s/4089/77043-Znaki-informacyjne.htm" shape="poly" coords="242,41,236,47,234,64,246,80,249,51" alt="info" />
+                    <area href="http://znaki-drogowe.dlakierowcy.info/s/4089/77041-Znaki-zakazu.htm" shape="poly" coords="216,33,233,52,219,69,202,52" alt="zakazu" />
+                    <area href="http://znaki-drogowe.dlakierowcy.info/s/4089/77043-Znaki-informacyjne.htm" shape="rect" coords="168,26,199,58" alt="info" />
+                    <area href="http://znaki-drogowe.dlakierowcy.info/s/4089/77041-Znaki-zakazu.htm" shape="poly" coords="86,25,99,31,104,43,98,58,86,65,72,57,69,44,74,29" alt="zakazu" />
+                    <area href="http://znaki-drogowe.dlakierowcy.info/s/4089/77045-Znaki-uzupelniajace.htm" shape="rect" coords="48,1,80,24" alt="uzupełniający" />
+                </map>
+            </div>
+            <span class="tag">coords="x<sub>1</sub>,y<sub>1</sub>,x<sub>2</sub>,y<sub>2</sub>,x<sub>3</sub>,y<sub>3</sub>,...,..."</span> - kolejne wierzchołki wielokąta
+      </div>
+    </div>
+    <footer>
+      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
+      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+    </footer>
+  </div>
+</body>
+</html>

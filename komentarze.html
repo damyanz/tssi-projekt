@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Damian Zapalski" />
+  <meta name="generator" content="Atom" />
+  <meta name="keywords" content="kurs, html, css" />
+  <title>Kurs HTML &amp; CSS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
+        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
+        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
+      </div>
+      <div class="menu_top">
+        <ul>
+          <li><a href="index.html">STRONA GŁÓWNA</a></li>
+          <li><a href="html.html"  id="a_active">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="box">
+      <div class="left">
+        <div class="menu_left">
+          <h4>HTML</h4>
+          <ul>
+            <li><a href="html.html">Czym jest HTML?</a></li>
+            <li><a href="struktura.html">Podstawowa struktura</a></li>
+            <li><a href="znaczniki.html">Znaczniki</a></li>
+            <li><a href="komentarze.html" id="a_active2">Komentarze</a></li>
+            <li><a href="meta.html">&lt;meta&gt; i &lt;title&gt;</a></li>
+            <li><a href="listy.html">Listy</a></li>
+            <li><a href="zagniezdzona.html">Lista zagnieżdżona</a></li>
+            <li><a href="definicji.html">Lista definicji</a></li>
+            <li><a href="grafika.html">Grafika</a></li>
+            <li><a href="hiperlacza.html">Hiperłącza i kotwice</a></li>
+            <li><a href="mapa.html">Mapa odsyłaczy</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a href="uklady.html">Układy stron</a></li>
+            <li><a href="pionowe.html">Menu pionowe</a></li>
+            <li><a href="poziome.html">Menu poziome</a></li>
+            <li><a href="formularze.html">Formularze</a></li>
+            <li><a href="grupowany.html">Formularz grupowany</a></li>
+            <li><a href="plynne.html">Układy płynne</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="hybrydowe.html">Układy hybrydowe</a></li>
+          </ul>
+      </div>
+    </div>
+      <div class="main">
+        <h2>Komentarze</h2>
+        <p>Często zdarza się, że autor dla swojej wygody chciałby umieścić na stronie pewien tekst, który nie będzie widoczny dla normalnych użytkowników.
+           Dzięki temu mógłby zaznaczyć ważne elementy strony lub wprowadzić inne informacje, które nie muszą być wyświetlane na ekranie, ponieważ mogłyby spowodować zaciemnienie właściwej treści.<br /><br />
+           Do wprowadzenia tekstu, który jest niewidoczny na ekranie, ale istnieje w źródle dokumentu, służy właśnie komentarz.
+          Cały tekst który zostanie do niego wpisany będzie zignorowany przez przeglądarkę, ale może przechowywać ważne informacje dla autora strony (np. prawa autorskie). Oczywiście wewnątrz komentarza zwykłe znaczniki nie są interpretowane (chociaż można je tam wpisać).
+          <div class="example">
+            <h3>Komentarz jednoliniowy</h3>
+            <pre>
+&lt;!-- &lt;strong&gt;Ten&lt;/strong&gt; tekst zostanie zignorowany przez przeglądarkę --&gt;</pre>
+          </div>
+          <div class="example">
+            <h3>Komentarz wieloliniowy</h3>
+            <pre>
+&lt;!-- Komentarz, który
+został napisany
+na trzech liniach. --&gt;</pre>
+          </div>
+          <span class="tag">&lt;!--</span> - początek komentarza<br />
+          <span class="tag">--&gt;</span> - koniec komentarza<br /><br />
+          <em>Więcej o komentarzach <a href="https://www.w3schools.com/tags/tag_comment.asp">https://www.w3schools.com/tags/tag_comment.asp</a></em>
+      </div>
+    </div>
+    <footer>
+      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
+      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+    </footer>
+  </div>
+</body>
+</html>

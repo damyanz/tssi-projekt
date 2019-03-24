@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Damian Zapalski" />
+  <meta name="generator" content="Atom" />
+  <meta name="keywords" content="kurs, html, css" />
+  <title>Kurs HTML &amp; CSS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
+        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
+        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
+      </div>
+      <div class="menu_top">
+        <ul>
+          <li><a href="index.html">STRONA GŁÓWNA</a></li>
+          <li><a href="html.html"  id="a_active">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="box">
+      <div class="left">
+        <div class="menu_left">
+          <h4>HTML</h4>
+          <ul>
+            <li><a href="html.html">Czym jest HTML?</a></li>
+            <li><a href="struktura.html">Podstawowa struktura</a></li>
+            <li><a href="znaczniki.html">Znaczniki</a></li>
+            <li><a href="komentarze.html">Komentarze</a></li>
+            <li><a href="meta.html">&lt;meta&gt; i &lt;title&gt;</a></li>
+            <li><a href="listy.html">Listy</a></li>
+            <li><a href="zagniezdzona.html">Lista zagnieżdżona</a></li>
+            <li><a href="definicji.html">Lista definicji</a></li>
+            <li><a href="grafika.html">Grafika</a></li>
+            <li><a href="hiperlacza.html">Hiperłącza i kotwice</a></li>
+            <li><a href="mapa.html">Mapa odsyłaczy</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a href="uklady.html">Układy stron</a></li>
+            <li><a href="pionowe.html">Menu pionowe</a></li>
+            <li><a href="poziome.html">Menu poziome</a></li>
+            <li><a href="formularze.html" id="a_active2">Formularze</a></li>
+            <li><a href="grupowany.html">Formularz grupowany</a></li>
+            <li><a href="plynne.html">Układy płynne</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="hybrydowe.html">Układy hybrydowe</a></li>
+          </ul>
+      </div>
+    </div>
+      <div class="main">
+        <h2>Formularze</h2>
+        <p>Formularze to jedne z najciekawszych elementów stron internetowych. Pozwalają one autorom stron uzyskiwać informację od czytelników, zaś tym ostatnim, na przykład, wypełniać ankiety czy zamawiać jakieś towary i usługi.
+          Przykładowy formularz poniżej
+          <form class="przyklad">
+        		<label>Imię: <input type="text" name="imie" value="Rafał"/></label>
+        		<label>Nazwisko: <input type="text" name="nazwisko"/></label>
+        		<label>Hasło: <input type="password" name="haslo"/></label>
+        		<label>Telefon: <input type="tel" name="telefon"/></label>
+        		<label>Poczta: <input type="email" name="email"/></label>
+        		<label>URL: <input type="url" name="url"/></label>
+        		<label>Data: <input type="date" name="data"/></label>
+        		<label>Numer: <input type="number" min="3" max="30" step="2" name="numer"/></label>
+        		<label>Zakres: <input type="range" min="5" max="50" step="5" name="zakres"/></label>
+        		<label>Kolor: <input type="color" name="kolor"/></label>
+        		<input type="submit" value="Wyślij" tabindex="3" accesskey="w"/>
+        	</form><br /><br />
+          Jego kod prezentuje się następująco:
+          <div class="example">
+            <h3>Przykładowy formularz</h3>
+            <pre>
+&lt;form&gt;
+  &lt;label&gt;Imię: &lt;input type=&quot;text&quot; name=&quot;imie&quot; value=&quot;Rafał&quot;/&gt;&lt;/label&gt;
+  &lt;label&gt;Nazwisko: &lt;input type=&quot;text&quot; name=&quot;nazwisko&quot;/&gt;&lt;/label&gt;
+  &lt;label&gt;Hasło: &lt;input type=&quot;password&quot; name=&quot;haslo&quot;/&gt;&lt;/label&gt;
+  &lt;label&gt;Telefon: &lt;input type=&quot;tel&quot; name=&quot;telefon&quot;/&gt;&lt;/label&gt;
+  &lt;label&gt;Poczta: &lt;input type=&quot;email&quot; name=&quot;email&quot;/&gt;&lt;/label&gt;
+  &lt;label&gt;URL: &lt;input type=&quot;url&quot; name=&quot;url&quot;/&gt;&lt;/label&gt;
+  &lt;label&gt;Data: &lt;input type=&quot;date&quot; name=&quot;data&quot;/&gt;&lt;/label&gt;
+  &lt;label&gt;Numer: &lt;input type=&quot;number&quot; min=&quot;3&quot; max=&quot;30&quot; step=&quot;2&quot; name=&quot;numer&quot;/&gt;
+  &lt;/label&gt;
+  &lt;label&gt;Zakres: &lt;input type=&quot;range&quot; min=&quot;5&quot; max=&quot;50&quot; step=&quot;5&quot; name=&quot;zakres&quot;/&gt;
+  &lt;/label&gt;
+  &lt;label&gt;Kolor: &lt;input type=&quot;color&quot; name=&quot;kolor&quot;/&gt;&lt;/label&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Wyślij&quot; tabindex=&quot;3&quot; accesskey=&quot;w&quot;/&gt;
+&lt;/form&gt;</pre>Poniżej kod CSS formatujący formularz
+              <pre class="half2">
+form{
+  position:relative;
+  width:250px;
+  border-radius:10px;
+  font-size:1em;
+  margin:20px;
+}
+label{
+  display:block;
+  position:relative;
+}
+  input{
+  width:150px;
+  position:absolute;
+  right:0;
+  left:110px;
+}
+  input[name=imie]{
+  background:red;
+}
+  input[name=nazwisko]{
+  background:yellow;
+}
+  input[type=submit]{
+  position:relative;
+  width:152px;
+}
+  input[disabled=disabled]{
+  background:blue;
+}</pre>
+          </div>
+          <span class="tag">&lt;form&gt;</span> - znacznik otwierający i zamykający formularz<br />
+          <span class="tag">&lt;label&gt;</span> - połączenie etykiety z polem<br />
+          <span class="tag">&lt;input&gt;</span> - pole formularza<br />
+          <span class="tag">&lt;input type="submit"&gt;</span> - przycisk wysyłający formularz<br /><br />
+          Kolejny przykładowy formularz<br />
+          <form>
+  <input type="radio" name="gender" value="male" checked> Mężczyzna<br>
+  <input type="radio" name="gender" value="female"> Kobieta<br>
+  <input type="radio" name="gender" value="other"> Inny
+</form><br />Jego kod:
+          <div class="example">
+            <h3>Przykładowy formularz - radiobutton</h3>
+            <pre>
+&lt;form&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;male&quot; checked&gt; Mężczyzna&lt;br&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;female&quot;&gt; Kobieta&lt;br&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;other&quot;&gt; Inny
+&lt;/form&gt;</pre>
+          </div>
+          <h2>Przykładowe typy pola input</h2>
+          <table>
+            <tr>
+              <td style="width:200px;padding:4px 4px 4px 8px;"><strong>Typ</strong></td><td style="width:500px;"><strong>Opis</strong></td>
+            </tr>
+            <tr style="background-color:#f1f1f1;">
+              <td style="width:200px;padding:4px 4px 4px 8px;">button</td><td style="width:500px;padding-left:4px;">Przycisk, zwykle używany do aktywacji skryptów</td>
+            </tr>
+            <tr>
+              <td style="width:200px;padding:4px 4px 4px 8px;">checkbox</td><td style="width:500px;padding-left:4px">Pole wyboru</td>
+            </tr>
+            <tr style="background-color:#f1f1f1;">
+              <td style="width:200px;padding:4px 4px 4px 8px;">color</td><td style="width:500px;padding-left:4px">Pole wyboru koloru</td>
+            </tr>
+            <tr>
+              <td style="width:200px;padding:4px 4px 4px 8px;">date</td><td style="width:500px;padding-left:4px">Pole wyboru daty (z kalendarzem)</td>
+            </tr>
+            <tr style="background-color:#f1f1f1;">
+              <td style="width:200px;padding:4px 4px 4px 8px;">email</td><td style="width:500px;padding-left:4px">Pole do wpisywania adresu e-mail</td>
+            </tr>
+            <tr style="background-color:#f1f1f1;">
+              <td style="width:200px;padding:4px 4px 4px 8px;">image</td><td style="width:500px;padding-left:4px;">Obrazek jako przycisk wysyłający</td>
+            </tr>
+            <tr>
+              <td style="width:200px;padding:4px 4px 4px 8px;">number</td><td style="width:500px;padding-left:4px">Pole do wpisywania liczby</td>
+            </tr>
+            <tr style="background-color:#f1f1f1;">
+              <td style="width:200px;padding:4px 4px 4px 8px;">password</td><td style="width:500px;padding-left:4px">Pole do wpisywania hasła (zakropkowane)</td>
+            </tr>
+            <tr>
+              <td style="width:200px;padding:4px 4px 4px 8px;">radio</td><td style="width:500px;padding-left:4px">Przycisk wyboru</td>
+            </tr>
+            <tr style="background-color:#f1f1f1;">
+              <td style="width:200px;padding:4px 4px 4px 8px;">range</td><td style="width:500px;padding-left:4px">Zakres</td>
+              <tr>
+                <td style="width:200px;padding:4px 4px 4px 8px;">reset</td><td style="width:500px;padding-left:4px">Przycisk czyszczenia formularza</td>
+              </tr>
+              <tr style="background-color:#f1f1f1;">
+                <td style="width:200px;padding:4px 4px 4px 8px;">tel</td><td style="width:500px;padding-left:4px">Pole do wpisywania numeru telefonu</td>
+              </tr>
+              <tr>
+                <td style="width:200px;padding:4px 4px 4px 8px;">text</td><td style="width:500px;padding-left:4px">Standardowe pole tekstowe</td>
+              </tr>
+              <tr style="background-color:#f1f1f1;">
+                <td style="width:200px;padding:4px 4px 4px 8px;">time</td><td style="width:500px;padding-left:4px">Pole do wpisywania czasu</td>
+                <tr>
+                  <td style="width:200px;padding:4px 4px 4px 8px;">url</td><td style="width:500px;padding-left:4px">Pole do wpisywania adresu URL</td>
+                </tr>
+          </table><br />
+          <em>Więcej o formularzach <a href="https://www.w3schools.com/html/html_forms.asp">https://www.w3schools.com/html/html_forms.asp</a></em><br />
+          <em>Więcej elementów formularzów <a href="https://www.w3schools.com/html/html_form_elements.asp">https://www.w3schools.com/html/html_form_elements.asp</a></em><br />
+          <em>Więcej atrybutów formularzów <a href="https://www.w3schools.com/html/html_form_attributes.asp">https://www.w3schools.com/html/html_form_attributes.asp</a></em>
+    </div>
+  </div>
+    <footer>
+      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
+      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+    </footer>
+  </div>
+</body>
+</html>

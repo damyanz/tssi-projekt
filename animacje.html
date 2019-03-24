@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Damian Zapalski" />
+  <meta name="generator" content="Atom" />
+  <meta name="keywords" content="kurs, html, css" />
+  <title>Kurs HTML &amp; CSS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
+        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
+        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
+      </div>
+      <div class="menu_top">
+        <ul>
+          <li><a href="index.html">STRONA GŁÓWNA</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html" id="a_active">CSS</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="box">
+      <div class="left">
+        <div class="menu_left">
+          <h4>CSS</h4>
+          <ul>
+            <li><a href="css.html">Czym jest CSS?</a></li>
+            <li><a href="selektory.html">Selektory</a></li>
+            <li><a href="osadzanie.html">Osadzanie CSS'a</a></li>
+            <li><a href="przyklady.html">Przykłady</a></li>
+            <li><a href="kaskadowosc.html">Kaskadowość</a></li>
+            <li><a href="komentarzecss.html">Komentarze</a></li>
+            <li><a href="pudelko.html">Model pudełkowy</a></li>
+            <li><a href="pozycjonowanie.html">Pozycjonowanie</a></li>
+            <li><a href="tlo.html">Grafika jako tło</a></li>
+            <li><a href="gradient.html">Gradienty</a></li>
+            <li><a href="przeksztalcenia.html">Przekształcenia</a></li>
+            <li><a href="animacje.html" id="a_active2">Animacje</a></li>
+          </ul>
+      </div>
+    </div>
+      <div class="main">
+        <h2>Animacje</h2>
+        <div class="example">
+          <h3>Przykład 1</h3>
+          Animacja płynnie zmieniająca tło div'a
+          <pre>
+&lt;div&gt;&lt;/div&gt;
+          </pre>
+          <pre class="half2">
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: przyklad1; /* Nazwa */
+  animation-duration: 4s; /* Czas trwania */
+}
+@keyframes przyklad1 {
+  from {background-color: red;} /* Początek */
+  to {background-color: yellow;} /* Koniec */
+}</pre>Efekt:
+<div style="width: 100px;height: 100px;background-color: red;animation-name: przyklad1;animation-duration: 4s;">
+</div><br />
+        </div>
+        <span class="tag">@keyframes nazwa_animacji</span> - składnia definicji animacji
+        <div class="example">
+          <h3>Przykład 2</h3>
+          <pre>
+&lt;div&gt;&lt;/div&gt;</pre>
+          <pre class="half2">
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: przyklad2;
+  animation-duration: 5s;
+  animation-timing-function: linear; /* Regularność */
+  animation-delay: 2s; /* Opóźnienie */
+  animation-iteration-count: infinite; /* Powtórzenia */
+  animation-direction: alternate; /* Kierunek */
+}
+@keyframes przyklad2 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}</pre><div style="height:300px;">
+<div style="width: 100px;height: 100px;background-color: red;position: relative;animation-name: przyklad2;animation-duration: 5s;animation-timing-function: linear;animation-delay: 2s;animation-iteration-count: infinite;animation-direction: alternate;"></div>
+</div></div>
+<em>Więcej o animacjach <a href="https://www.w3schools.com/css/css3_animations.asp">https://www.w3schools.com/css/css3_animations.asp</a></em></div>
+      </div>
+    <footer>
+      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
+      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+    </footer>
+  </div>
+</body>
+</html>

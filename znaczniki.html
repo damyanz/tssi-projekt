@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Damian Zapalski" />
+  <meta name="generator" content="Atom" />
+  <meta name="keywords" content="kurs, html, css" />
+  <title>Kurs HTML &amp; CSS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
+        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
+        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
+      </div>
+      <div class="menu_top">
+        <ul>
+          <li><a href="index.html">STRONA GŁÓWNA</a></li>
+          <li><a href="html.html"  id="a_active">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="box">
+      <div class="left">
+        <div class="menu_left">
+          <h4>HTML</h4>
+          <ul>
+            <li><a href="html.html">Czym jest HTML?</a></li>
+            <li><a href="struktura.html">Podstawowa struktura</a></li>
+            <li><a href="znaczniki.html" id="a_active2">Znaczniki</a></li>
+            <li><a href="komentarze.html">Komentarze</a></li>
+            <li><a href="meta.html">&lt;meta&gt; i &lt;title&gt;</a></li>
+            <li><a href="listy.html">Listy</a></li>
+            <li><a href="zagniezdzona.html">Lista zagnieżdżona</a></li>
+            <li><a href="definicji.html">Lista definicji</a></li>
+            <li><a href="grafika.html">Grafika</a></li>
+            <li><a href="hiperlacza.html">Hiperłącza i kotwice</a></li>
+            <li><a href="mapa.html">Mapa odsyłaczy</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a href="uklady.html">Układy stron</a></li>
+            <li><a href="pionowe.html">Menu pionowe</a></li>
+            <li><a href="poziome.html">Menu poziome</a></li>
+            <li><a href="formularze.html">Formularze</a></li>
+            <li><a href="grupowany.html">Formularz grupowany</a></li>
+            <li><a href="plynne.html">Układy płynne</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="hybrydowe.html">Układy hybrydowe</a></li>
+          </ul>
+      </div>
+    </div>
+      <div class="main">
+        <h2>Znaczniki</h2>
+        <p>
+          <strong>Znacznik</strong> - instrukcja formatująca dokument HTML. Jest ona umieszczona w nawiasach ostrych <strong>&lt;&gt;</strong>. Znacznik nie jest widoczny na ekranie.
+          Widoczne są jedynie efekty jego działania.<br /><br />
+          Znaczniki dzielimy na dwa typy:<br /><br />
+          <ol>
+            <li><strong>kontenerowe</strong>
+              <ul>
+                <li>zawierają znaczniki zarówno otwierający np.: <span class="tag">&lt;p&gt;</span>, jak i zamykający <span class="tag">&lt;/p&gt;</span> </li>
+                <li>Element formatowany umieszczamy między znacznikiem otwierającym, a zamykającym</li>
+                <li>Przykład: <span class="tag">&lt;h1&gt;Ten tekst zostanie sformatowany jako nagłówek pierwszego stopnia&lt;/h1&gt;</span></li>
+              </ul>
+              <h1>Ten tekst zostanie sformatowany jako nagłówek pierwszego stopnia</h1>
+            </li>
+            <li style="margin-top:15px;"><strong>pojedyncze</strong>
+              <ul>
+                <li>brak znacznika zamykającego</li>
+                <li>przed nawiasem zamykającym umieszcza się <strong>/</strong></li>
+                <li>używa się ich wtedy, gdy wstawia się jakiś pojedynczy element np. poziomą linię lub obrazek</li>
+                <li>Przykład: <span class="tag">&lt;hr/&gt;</span> </li>
+              </ul>
+              <hr />
+            </li>
+          </ol><br />
+          <h2>Przykładowe znaczniki HTML5:</h2><br />
+          <table>
+            <tr>
+              <td style="width:200px;padding:4px 4px 4px 8px;"><strong>Znacznik</strong></td><td style="width:500px;"><strong>Opis</strong></td>
+            </tr>
+            <tr style="background-color:#f1f1f1;">
+              <td style="width:200px;padding:4px 4px 4px 8px;">&lt;p&gt;</td><td style="width:500px;padding-left:4px;">Akapit</td>
+            </tr>
+            <tr>
+              <td style="width:200px;padding:4px 4px 4px 8px;">&lt;h1-6&gt;</td><td style="width:500px;padding-left:4px">Nagłówek 1-6 stopnia</td>
+            </tr>
+            <tr style="background-color:#f1f1f1;">
+              <td style="width:200px;padding:4px 4px 4px 8px;">&lt;em&gt;</td><td style="width:500px;padding-left:4px">Lekkie zaakcentowanie</td>
+            </tr>
+            <tr>
+              <td style="width:200px;padding:4px 4px 4px 8px;">&lt;strong&gt;</td><td style="width:500px;padding-left:4px">Mocne zaakcentowanie</td>
+            </tr>
+            <tr style="background-color:#f1f1f1;">
+              <td style="width:200px;padding:4px 4px 4px 8px;">&lt;small&gt;</td><td style="width:500px;padding-left:4px">Zmniejszenie fragmentu tekstu</td>
+            </tr>
+            <tr>
+              <td style="width:200px;padding:4px 4px 4px 8px;">&lt;div&gt;</td><td style="width:500px;padding-left:4px">Blok</td>
+            </tr>
+            <tr style="background-color:#f1f1f1;">
+              <td style="width:200px;padding:4px 4px 4px 8px;">&lt;cite&gt;</td><td style="width:500px;padding-left:4px;">Cytowanie tytułów</td>
+            </tr>
+            <tr>
+              <td style="width:200px;padding:4px 4px 4px 8px;">&lt;q&gt;</td><td style="width:500px;padding-left:4px">Cytowanie tekstu</td>
+            </tr>
+            <tr style="background-color:#f1f1f1;">
+              <td style="width:200px;padding:4px 4px 4px 8px;">&lt;code&gt;</td><td style="width:500px;padding-left:4px">Cytowanie bez zmiany formatowania</td>
+            </tr>
+            <tr>
+              <td style="width:200px;padding:4px 4px 4px 8px;">&lt;sup&gt;</td><td style="width:500px;padding-left:4px">Indeks górny</td>
+            </tr>
+            <tr style="background-color:#f1f1f1;">
+              <td style="width:200px;padding:4px 4px 4px 8px;">&lt;sub&gt;</td><td style="width:500px;padding-left:4px">Indeks dolny</td>
+              <tr>
+                <td style="width:200px;padding:4px 4px 4px 8px;">&lt;br/&gt;</td><td style="width:500px;padding-left:4px">Przejście do następnej linii</td>
+              </tr>
+              <tr style="background-color:#f1f1f1;">
+                <td style="width:200px;padding:4px 4px 4px 8px;">&lt;pre&gt;</td><td style="width:500px;padding-left:4px">Przeglądarka uwzględnia białe znaki</td>
+              </tr>
+              <tr>
+                <td style="width:200px;padding:4px 4px 4px 8px;">&lt;hr/&gt;</td><td style="width:500px;padding-left:4px">Linia pozioma</td>
+              </tr>
+          </table><br />
+          <em>Więcej o znacznikach <a href="https://www.w3schools.com/tags/">https://www.w3schools.com/tags/</a></em>
+      </div>
+    </div>
+    <footer>
+      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
+      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+    </footer>
+  </div>
+</body>
+</html>

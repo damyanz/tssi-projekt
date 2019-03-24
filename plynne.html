@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Damian Zapalski" />
+  <meta name="generator" content="Atom" />
+  <meta name="keywords" content="kurs, html, css" />
+  <title>Kurs HTML &amp; CSS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
+        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
+        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
+      </div>
+      <div class="menu_top">
+        <ul>
+          <li><a href="index.html">STRONA GŁÓWNA</a></li>
+          <li><a href="html.html"  id="a_active">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="box">
+      <div class="left">
+        <div class="menu_left">
+          <h4>HTML</h4>
+          <ul>
+            <li><a href="html.html">Czym jest HTML?</a></li>
+            <li><a href="struktura.html">Podstawowa struktura</a></li>
+            <li><a href="znaczniki.html">Znaczniki</a></li>
+            <li><a href="komentarze.html">Komentarze</a></li>
+            <li><a href="meta.html">&lt;meta&gt; i &lt;title&gt;</a></li>
+            <li><a href="listy.html">Listy</a></li>
+            <li><a href="zagniezdzona.html">Lista zagnieżdżona</a></li>
+            <li><a href="definicji.html">Lista definicji</a></li>
+            <li><a href="grafika.html">Grafika</a></li>
+            <li><a href="hiperlacza.html">Hiperłącza i kotwice</a></li>
+            <li><a href="mapa.html">Mapa odsyłaczy</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a href="tabele.html">Układy stron</a></li>
+            <li><a href="pionowe.html">Menu pionowe</a></li>
+            <li><a href="poziome.html">Menu poziome</a></li>
+            <li><a href="formularze.html">Formularze</a></li>
+            <li><a href="grupowany.html">Formularz grupowany</a></li>
+            <li><a href="plynne.html" id="a_active2">Układy płynne</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="hybrydowe.html">Układy hybrydowe</a></li>
+          </ul>
+      </div>
+    </div>
+      <div class="main">
+        <h2>Układy stron o stałej szerokości</h2>
+        <p>Stronę internetową można też tworzyć w oparciu o układ płynny, czyli taki, który zajmuje dany % szerokości okna przeglądarki.<br />
+          <span style="color:red;">Różnicę między układem o stałej szerokości najlepiej będzie widać na przykładowych dokumentach, powiększając i zmniejszając stronę.</span>
+          <h2>Układ płynny 1</h2>
+          <p>Układ 1 składa się tylko z części głównej strony (pojemnika).
+            <div class="plynny1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget fringilla ante, sed lobortis dolor. Nam est lorem, tincidunt ut orci vitae, porttitor molestie velit. Mauris non ex leo. Cras magna quam, fermentum vel ante sit amet, pellentesque feugiat mauris. Duis sed mauris congue tellus imperdiet sollicitudin porttitor et tortor. Donec posuere tristique orci, vel lobortis ex porttitor gravida. Ut porttitor elit at arcu pharetra, in lobortis neque sollicitudin. Nam imperdiet id dolor at mattis. Curabitur erat sapien, ornare convallis laoreet in, ornare sit amet nisi. Sed pretium risus a lorem dictum condimentum. Integer turpis felis, malesuada eu tincidunt vitae, ultrices a enim. Vivamus pellentesque, nulla commodo fringilla fermentum, ipsum ex fringilla purus, ut suscipit nisl sapien ac erat. Duis sit amet tincidunt erat. Nulla facilisi. Suspendisse potenti. Donec consectetur libero sit amet massa varius lacinia. Vestibulum id ligula felis. Donec posuere sem non lacus facilisis, nec suscipit sapien iaculis.
+            </div>
+            <div class="example">
+              <h3>Kod układu 1</h3>
+              <pre>
+&lt;div id="pojemnik"&gt;
+  Lorem ipsum...
+&lt;/div&gt;</pre>
+            Kod CSS dla tego układu:
+            <pre class="half2">
+#pojemnik{
+  width:60%;
+  margin:0 auto;
+  background-color:gray;
+}</pre>
+            </div>
+            <em>Układ 1 - <a href="uklady/plynny1.html">dokument HTML</a></em><br /><br />
+            <h2>Układ płynny 2</h2>
+            <p>Układ 2 składa się z nagłówka, pojemnika i stopki
+            <div class="plynny1">
+            <header class="uklad_header">Nagłówek</header>
+            <div class="plynny1poj">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget fringilla ante, sed lobortis dolor. Nam est lorem, tincidunt ut orci vitae, porttitor molestie velit. Mauris non ex leo. Cras magna quam, fermentum vel ante sit amet, pellentesque feugiat mauris. Duis sed mauris congue tellus imperdiet sollicitudin porttitor et tortor. Donec posuere tristique orci, vel lobortis ex porttitor gravida. Ut porttitor elit at arcu pharetra, in lobortis neque sollicitudin. Nam imperdiet id dolor at mattis. Curabitur erat sapien, ornare convallis laoreet in, ornare sit amet nisi. Sed pretium risus a lorem dictum condimentum. Integer turpis felis, malesuada eu tincidunt vitae, ultrices a enim. Vivamus pellentesque, nulla commodo fringilla fermentum, ipsum ex fringilla purus, ut suscipit nisl sapien ac erat. Duis sit amet tincidunt erat. Nulla facilisi. Suspendisse potenti. Donec consectetur libero sit amet massa varius lacinia. Vestibulum id ligula felis. Donec posuere sem non lacus facilisis, nec suscipit sapien iaculis.
+            </div>
+            <footer class="uklad_stopka">Stopka</footer>
+            </div>
+            <div class="example">
+              <h3>Kod układu 2</h3>
+              <pre>
+&lt;div id=&quot;kontener&quot;&gt;
+  &lt;header&gt;Nagłówek&lt;/header&gt;
+  &lt;div id=&quot;pojemnik&quot;&gt;
+    Lorem ipsum...
+  &lt;/div&gt;
+  &lt;footer&gt;Stopka&lt;/footer&gt;
+&lt;/div&gt;</pre>
+            Kod CSS dla tego układu:
+            <pre class="half2">
+#kontener{
+  width:60%;
+  margin:0 auto;
+  background-color:gray;
+}
+header{
+  text-align:center;
+  border-bottom:2px solid black;
+}
+footer{
+  text-align:center;
+  border-top:2px solid black;
+}</pre>
+            </div>
+            <em>Układ 2 - <a href="uklady/plynny2.html">dokument HTML</a></em><br /><br />
+            <h2>Układ płynny 3</h2>
+            <p>Układ 3 składa się z węższej kolumny lewej i szerszej kolumny prawej
+            <div class="plynny3">
+            <div class="lewa_plynny">
+              Lorem ipsum<br/>
+              Lorem ipsum<br/>
+              Lorem ipsum<br/>
+              Lorem ipsum<br/>
+              Lorem ipsum<br/>
+            </div>
+            <div class="prawa_plynny">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget fringilla ante, sed lobortis dolor. Nam est lorem, tincidunt ut orci vitae, porttitor molestie velit. Mauris non ex leo. Cras magna quam, fermentum vel ante sit amet, pellentesque feugiat mauris. Duis sed mauris congue tellus imperdiet sollicitudin porttitor et tortor. Donec posuere tristique orci, vel lobortis ex porttitor gravida. Ut porttitor elit at arcu pharetra, in lobortis neque sollicitudin. Nam imperdiet id dolor at mattis. Curabitur erat sapien, ornare convallis laoreet in, ornare sit amet nisi. Sed pretium risus a lorem dictum condimentum. Integer turpis felis, malesuada eu tincidunt vitae, ultrices a enim. Vivamus pellentesque, nulla commodo fringilla fermentum, ipsum ex fringilla purus, ut suscipit nisl sapien ac erat. Duis sit amet tincidunt erat. Nulla facilisi. Suspendisse potenti. Donec consectetur libero sit amet massa varius lacinia. Vestibulum id ligula felis. Donec posuere sem non lacus facilisis, nec suscipit sapien iaculis.
+            </div>
+            </div>
+            <div class="example">
+              <h3>Kod układu 3</h3>
+              <pre>
+&lt;div id=&quot;kontener&quot;&gt;
+  &lt;div id=&quot;lewa&quot;&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;prawa&quot;&gt;
+    Lorem ipsum...
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            Kod CSS dla tego układu:
+            <pre class="half2">
+#kontener{
+  width:80%;
+  margin:0 auto;
+  background-color:gray;
+  <span class="tag">overflow:hidden;</span>
+}
+#lewa{
+  float:left;
+  width:9%;
+}
+#prawa{
+  float:right;
+  width:89%;
+  border-left:2px solid black;
+}</pre>
+            </div>
+            <em>Układ 3 - <a href="uklady/plynny3.html">dokument HTML</a></em><br /><br />
+            <h2>Układ płynny 4</h2>
+            <p>Układ 4 składa się z szerszej kolumny lewej i węższej kolumny prawej
+            <div class="plynny3">
+            <div class="lewa_plynny1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget fringilla ante, sed lobortis dolor. Nam est lorem, tincidunt ut orci vitae, porttitor molestie velit. Mauris non ex leo. Cras magna quam, fermentum vel ante sit amet, pellentesque feugiat mauris. Duis sed mauris congue tellus imperdiet sollicitudin porttitor et tortor. Donec posuere tristique orci, vel lobortis ex porttitor gravida. Ut porttitor elit at arcu pharetra, in lobortis neque sollicitudin. Nam imperdiet id dolor at mattis. Curabitur erat sapien, ornare convallis laoreet in, ornare sit amet nisi. Sed pretium risus a lorem dictum condimentum. Integer turpis felis, malesuada eu tincidunt vitae, ultrices a enim. Vivamus pellentesque, nulla commodo fringilla fermentum, ipsum ex fringilla purus, ut suscipit nisl sapien ac erat. Duis sit amet tincidunt erat. Nulla facilisi. Suspendisse potenti. Donec consectetur libero sit amet massa varius lacinia. Vestibulum id ligula felis. Donec posuere sem non lacus facilisis, nec suscipit sapien iaculis.
+            </div>
+            <div class="prawa_plynny1">
+              Lorem ipsum<br/>
+              Lorem ipsum<br/>
+              Lorem ipsum<br/>
+              Lorem ipsum<br/>
+              Lorem ipsum<br/>
+            </div>
+            </div>
+            <div class="example">
+              <h3>Kod układu 4</h3>
+              <pre>
+&lt;div id=&quot;kontener&quot;&gt;
+  &lt;div id=&quot;lewa&quot;&gt;
+    Lorem ipsum...
+  &lt;/div&gt;
+  &lt;div id=&quot;prawa&quot;&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            Kod CSS dla tego układu:
+            <pre class="half2">
+#kontener{
+  width:80%;
+  margin:0 auto;
+  background-color:gray;
+  overflow:hidden;
+}
+#lewa{
+  float:left;
+  width:89%;
+  border-right:2px solid black;
+}
+#prawa{
+  float:right;
+  width:9%;
+}</pre>
+            </div>
+            <em>Układ 4 - <a href="uklady/plynny4.html">dokument HTML</a></em><br /><br />
+            <h2>Układ płynny 5</h2>
+            <p>Układ 5 składa się z trzech kolumn
+            <div class="plynny3">
+            <div class="lewa_plynny2">
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+            </div>
+            <div class="srodek_plynny">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget fringilla ante, sed lobortis dolor. Nam est lorem, tincidunt ut orci vitae, porttitor molestie velit. Mauris non ex leo. Cras magna quam, fermentum vel ante sit amet, pellentesque feugiat mauris. Duis sed mauris congue tellus imperdiet sollicitudin porttitor et tortor. Donec posuere tristique orci, vel lobortis ex porttitor gravida. Ut porttitor elit at arcu pharetra, in lobortis neque sollicitudin. Nam imperdiet id dolor at mattis. Curabitur erat sapien, ornare convallis laoreet in, ornare sit amet nisi. Sed pretium risus a lorem dictum condimentum. Integer turpis felis, malesuada eu tincidunt vitae, ultrices a enim. Vivamus pellentesque, nulla commodo fringilla fermentum, ipsum ex fringilla purus, ut suscipit nisl sapien ac erat. Duis sit amet tincidunt erat. Nulla facilisi. Suspendisse potenti. Donec consectetur libero sit amet massa varius lacinia. Vestibulum id ligula felis. Donec posuere sem non lacus facilisis, nec suscipit sapien iaculis.
+            </div>
+            <div class="prawa_plynny2">
+              Lorem ipsum<br/>
+              Lorem ipsum<br/>
+              Lorem ipsum<br/>
+              Lorem ipsum<br/>
+              Lorem ipsum<br/>
+            </div>
+            </div>
+            <div class="example">
+              <h3>Kod układu 5</h3>
+              <pre>
+&lt;div id=&quot;kontener&quot;&gt;
+  &lt;div id=&quot;lewa&quot;&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;srodek&quot;&gt;
+    Lorem ipsum...
+  &lt;/div&gt;
+  &lt;div id=&quot;prawa&quot;&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            Kod CSS dla tego układu:
+            <pre class="half2">
+#kontener{
+  width:80%;
+  margin:0 auto;
+  background-color:gray;
+  overflow:hidden;
+}
+#lewa{
+  float:left;
+  width:12%;
+}
+#srodek{
+  float:left;
+  width:70%;
+  border-left:2px solid black;
+  border-right:2px solid black;
+}
+#prawa{
+  float:right;
+  width:12%;
+}</pre>
+            </div>
+            <em>Układ 5 - <a href="uklady/plynny5.html">dokument HTML</a></em><br /><br />
+            <h2>Układ płynny 6</h2>
+            <p>Układ 6 składa się z dwóch kolumn, nagłówka i stopki
+            <div class="plynny3">
+            <header class="uklad_header">Nagłówek</header>
+            <div class="lewa_plynny">
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+            </div>
+            <div class="prawa_plynny">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget fringilla ante, sed lobortis dolor. Nam est lorem, tincidunt ut orci vitae, porttitor molestie velit. Mauris non ex leo. Cras magna quam, fermentum vel ante sit amet, pellentesque feugiat mauris. Duis sed mauris congue tellus imperdiet sollicitudin porttitor et tortor. Donec posuere tristique orci, vel lobortis ex porttitor gravida. Ut porttitor elit at arcu pharetra, in lobortis neque sollicitudin. Nam imperdiet id dolor at mattis. Curabitur erat sapien, ornare convallis laoreet in, ornare sit amet nisi. Sed pretium risus a lorem dictum condimentum. Integer turpis felis, malesuada eu tincidunt vitae, ultrices a enim. Vivamus pellentesque, nulla commodo fringilla fermentum, ipsum ex fringilla purus, ut suscipit nisl sapien ac erat. Duis sit amet tincidunt erat. Nulla facilisi. Suspendisse potenti. Donec consectetur libero sit amet massa varius lacinia. Vestibulum id ligula felis. Donec posuere sem non lacus facilisis, nec suscipit sapien iaculis.
+            </div>
+            <footer class="uklad_stopka">
+              Stopka
+            </footer>
+            </div>
+            <div class="example">
+              <h3>Kod układu 6</h3>
+              <pre>
+&lt;div class=&quot;kontener&quot;&gt;
+  &lt;header&gt;Nagłówek&lt;/header&gt;
+  &lt;div class=&quot;lewa&quot;&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;prawa&quot;&gt;
+    Lorem ipsum...
+  &lt;/div&gt;
+  &lt;footer&gt;Stopka&lt;/footer&gt;
+&lt;/div&gt;</pre>
+            Kod CSS dla tego układu:
+            <pre class="half2">
+#kontener{
+  width:80%;
+  margin:0 auto;
+  background-color:gray;
+  overflow:hidden;
+}
+header{
+  text-align:center;
+  border-bottom:2px solid black;
+}
+#lewa{
+  float:left;
+  width:9%;
+}
+#prawa{
+  float:right;
+  width:89%;
+  border-left:2px solid black;
+}
+footer{
+  text-align:center;
+  border-top:2px solid black;
+  <span class="tag">clear:both;</span>
+}</pre>
+            </div>
+            <em>Układ 6 - <a href="uklady/plynny6.html">dokument HTML</a></em><br /><br />
+            <h2>Układ płynny 7</h2>
+            <p>Układ 7 również składa się z dwóch kolumn, nagłówka i stopki
+            <div class="plynny3">
+            <header class="uklad_header">Nagłówek</header>
+            <div class="lewa_plynny1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget fringilla ante, sed lobortis dolor. Nam est lorem, tincidunt ut orci vitae, porttitor molestie velit. Mauris non ex leo. Cras magna quam, fermentum vel ante sit amet, pellentesque feugiat mauris. Duis sed mauris congue tellus imperdiet sollicitudin porttitor et tortor. Donec posuere tristique orci, vel lobortis ex porttitor gravida. Ut porttitor elit at arcu pharetra, in lobortis neque sollicitudin. Nam imperdiet id dolor at mattis. Curabitur erat sapien, ornare convallis laoreet in, ornare sit amet nisi. Sed pretium risus a lorem dictum condimentum. Integer turpis felis, malesuada eu tincidunt vitae, ultrices a enim. Vivamus pellentesque, nulla commodo fringilla fermentum, ipsum ex fringilla purus, ut suscipit nisl sapien ac erat. Duis sit amet tincidunt erat. Nulla facilisi. Suspendisse potenti. Donec consectetur libero sit amet massa varius lacinia. Vestibulum id ligula felis. Donec posuere sem non lacus facilisis, nec suscipit sapien iaculis.
+            </div>
+            <div class="prawa_plynny1">
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+            </div>
+            <footer class="uklad_stopka">
+              Stopka
+            </footer>
+            </div>
+            <div class="example">
+              <h3>Kod układu 7</h3>
+              <pre>
+&lt;div class=&quot;kontener&quot;&gt;
+  &lt;header&gt;Nagłówek&lt;/header&gt;
+  &lt;div class=&quot;lewa&quot;&gt;
+    Lorem ipsum...
+  &lt;/div&gt;
+  &lt;div class=&quot;prawa&quot;&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+  &lt;/div&gt;
+  &lt;footer&gt;Stopka&lt;/footer&gt;
+&lt;/div&gt;</pre>
+            Kod CSS dla tego układu:
+            <pre class="half2">
+#kontener{
+  width:80%;
+  margin:0 auto;
+  background-color:gray;
+  overflow:hidden;
+}
+header{
+  text-align:center;
+  border-bottom:2px solid black;
+}
+#lewa{
+  float:left;
+  width:89%;
+  border-right:2px solid black;
+}
+#prawa{
+  float:right;
+  width:9%;
+}
+footer{
+  text-align:center;
+  border-top:2px solid black;
+  clear:both;
+}</pre>
+            </div>
+            <em>Układ 7 - <a href="uklady/uklad7.html">dokument HTML</a></em><br /><br />
+            <h2>Układ płynny 8</h2>
+            <p>Układ 8 składa się z trzech kolumn i stopki
+            <div class="plynny3">
+            <header class="uklad_header">Nagłówek</header>
+            <div class="lewa_plynny2">
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+            </div>
+            <div class="srodek_plynny">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget fringilla ante, sed lobortis dolor. Nam est lorem, tincidunt ut orci vitae, porttitor molestie velit. Mauris non ex leo. Cras magna quam, fermentum vel ante sit amet, pellentesque feugiat mauris. Duis sed mauris congue tellus imperdiet sollicitudin porttitor et tortor. Donec posuere tristique orci, vel lobortis ex porttitor gravida. Ut porttitor elit at arcu pharetra, in lobortis neque sollicitudin. Nam imperdiet id dolor at mattis. Curabitur erat sapien, ornare convallis laoreet in, ornare sit amet nisi. Sed pretium risus a lorem dictum condimentum. Integer turpis felis, malesuada eu tincidunt vitae, ultrices a enim. Vivamus pellentesque, nulla commodo fringilla fermentum, ipsum ex fringilla purus, ut suscipit nisl sapien ac erat. Duis sit amet tincidunt erat. Nulla facilisi. Suspendisse potenti. Donec consectetur libero sit amet massa varius lacinia. Vestibulum id ligula felis. Donec posuere sem non lacus facilisis, nec suscipit sapien iaculis.
+            </div>
+            <div class="prawa_plynny2">
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+                Lorem ipsum<br/>
+            </div>
+            <footer class="uklad_stopka">
+              Stopka
+            </footer>
+            </div>
+            <div class="example">
+              <h3>Kod układu 8</h3>
+              <pre>
+&lt;div class=&quot;kontener&quot;&gt;
+  &lt;header&gt;Nagłówek&lt;/header&gt;
+  &lt;div class=&quot;lewa&quot;&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;srodek&quot;&gt;
+    Lorem ipsum...
+  &lt;/div&gt;
+  &lt;div class=&quot;prawa&quot;&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+    Lorem ipsum&lt;br/&gt;
+  &lt;/div&gt;
+  &lt;footer&gt;Stopka&lt;/footer&gt;
+&lt;/div&gt;</pre>
+            Kod CSS dla tego układu:
+            <pre class="half2">
+#kontener{
+  width:80%;
+  margin:0 auto;
+  background-color:gray;
+  overflow:hidden;
+}
+header{
+  text-align:center;
+  border-bottom:2px solid black;
+}
+#lewa{
+  float:left;
+  width:12%;
+}
+#srodek{
+  float:left;
+  width:70%;
+  border-left:2px solid black;
+  border-right:2px solid black;
+}
+#prawa{
+  float:right;
+  width:12%;
+}
+footer{
+  text-align:center;
+  border-top:2px solid black;
+  clear:both;
+}</pre>
+            </div>
+            <em>Układ 8 - <a href="uklady/plynny8.html">dokument HTML</a></em><br /><br />
+      </div>
+    </div>
+    <footer>
+      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
+      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+    </footer>
+  </div>
+</body>
+</html>

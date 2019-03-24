@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Damian Zapalski" />
+  <meta name="generator" content="Atom" />
+  <meta name="keywords" content="kurs, html, css" />
+  <title>Kurs HTML &amp; CSS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
+        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
+        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
+      </div>
+      <div class="menu_top">
+        <ul>
+          <li><a href="index.html">STRONA GŁÓWNA</a></li>
+          <li><a href="html.html"  id="a_active">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="box">
+      <div class="left">
+        <div class="menu_left">
+          <h4>HTML</h4>
+          <ul>
+            <li><a href="html.html">Czym jest HTML?</a></li>
+            <li><a href="struktura.html">Podstawowa struktura</a></li>
+            <li><a href="znaczniki.html">Znaczniki</a></li>
+            <li><a href="komentarze.html">Komentarze</a></li>
+            <li><a href="meta.html">&lt;meta&gt; i &lt;title&gt;</a></li>
+            <li><a href="listy.html" id="a_active2">Listy</a></li>
+            <li><a href="zagniezdzona.html">Lista zagnieżdżona</a></li>
+            <li><a href="definicji.html">Lista definicji</a></li>
+            <li><a href="grafika.html">Grafika</a></li>
+            <li><a href="hiperlacza.html">Hiperłącza i kotwice</a></li>
+            <li><a href="mapa.html">Mapa odsyłaczy</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a href="uklady.html">Układy stron</a></li>
+            <li><a href="pionowe.html">Menu pionowe</a></li>
+            <li><a href="poziome.html">Menu poziome</a></li>
+            <li><a href="formularze.html">Menu formularze</a></li>
+            <li><a href="grupowany.html">Formularz grupowany</a></li>
+            <li><a href="plynne.html">Układy płynne</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+          </ul>
+      </div>
+    </div>
+      <div class="main">
+        <h2>Lista</h2>
+        <h4 style="color:red;">Uwaga! Przed przeczytaniem kolejnego rozdziału poradnika zalecam Ci przerobić materiał związany z <a href="css.html">kaskadowymi arkuszami stylów</a>  :)</h4>
+        <p>
+          Istnieją dwa typy list:<br />
+          <div class="example">
+            <a id="punktowana"><h3>Lista punktowana</h3></a>
+            <pre>
+&lt;ul&gt;
+  &lt;li&gt;Pierwszy element listy&lt;/li&gt;
+  &lt;li&gt;Drugi element listy&lt;/li&gt;
+  &lt;li&gt;Trzeci element listy&lt;/li&gt;
+&lt;/ul&gt;
+            </pre>
+            <em>Wygląda ona następująco:</em><br />
+            <ul>
+              <li>Pierwszy element listy</li>
+              <li>Drugi element listy</li>
+              <li>Trzeci element listy</li>
+            </ul>
+          </div>
+          <div class="example">
+            <h3>Lista numerowana</h3>
+            <pre>
+&lt;ol&gt;
+  &lt;li&gt;Pierwszy element listy&lt;/li&gt;
+  &lt;li&gt;Drugi element listy&lt;/li&gt;
+  &lt;li&gt;Trzeci element listy&lt;/li&gt;
+&lt;/ol&gt;
+            </pre>
+            <em>Wygląda ona następująco:</em><br />
+            <ol>
+              <li>Pierwszy element listy</li>
+              <li>Drugi element listy</li>
+              <li>Trzeci element listy</li>
+            </ol>
+          </div>
+          <span class="tag">&lt;ul&gt;</span> - definicja listy punktowanej<br />
+          <span class="tag">&lt;ol&gt;</span> - definicja listy numerowanej<br />
+          <span class="tag">&lt;ul&gt;</span> - definicja elementu listy<br /><br />
+          <h2>Właściwości CSS dla list</h2><br />
+          <table>
+            <tr>
+              <td style="width:200px;padding:4px 4px 4px 8px;"><strong>Właściwość</strong></td><td style="width:500px;"><strong>Opis</strong></td>
+            </tr>
+            <tr style="background-color:#f1f1f1;">
+              <td style="width:200px;padding:4px 4px 4px 8px;"><a href="https://www.w3schools.com/cssref/pr_list-style-type.asp">list-style-type</a></td><td style="width:500px;padding-left:4px;">Rodzaj punktora listy</td>
+            </tr>
+            <tr>
+              <td style="width:200px;padding:4px 4px 4px 8px;"><a href="https://www.w3schools.com/cssref/pr_list-style-position.asp">list-style-position</a></td><td style="width:500px;padding-left:4px">Pozycja punktora listy</td>
+            </tr>
+            <tr style="background-color:#f1f1f1;">
+              <td style="width:200px;padding:4px 4px 4px 8px;"><a href="https://www.w3schools.com/cssref/pr_list-style-image.asp">list-style-image</a></td><td style="width:500px;padding-left:4px;">Obrazek jako punktor</td>
+            </tr>
+          </table><br />
+          <em>Więcej o listach <a href="https://www.w3schools.com/html/html_lists.asp">https://www.w3schools.com/html/html_lists.asp</a></em>
+      </div>
+    </div>
+    <footer>
+      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
+      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Damian Zapalski" />
+  <meta name="generator" content="Atom" />
+  <meta name="keywords" content="kurs, html, css" />
+  <title>Kurs HTML &amp; CSS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
+        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
+        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
+      </div>
+      <div class="menu_top">
+        <ul>
+          <li><a href="index.html">STRONA GŁÓWNA</a></li>
+          <li><a href="html.html"  id="a_active">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="box">
+      <div class="left">
+        <div class="menu_left">
+          <h4>HTML</h4>
+          <ul>
+            <li><a href="html.html">Czym jest HTML?</a></li>
+            <li><a href="struktura.html">Podstawowa struktura</a></li>
+            <li><a href="znaczniki.html">Znaczniki</a></li>
+            <li><a href="komentarze.html">Komentarze</a></li>
+            <li><a href="meta.html">&lt;meta&gt; i &lt;title&gt;</a></li>
+            <li><a href="listy.html">Listy</a></li>
+            <li><a href="zagniezdzona.html">Lista zagnieżdżona</a></li>
+            <li><a href="definicji.html">Lista definicji</a></li>
+            <li><a href="grafika.html">Grafika</a></li>
+            <li><a href="hiperlacza.html">Hiperłącza i kotwice</a></li>
+            <li><a href="mapa.html">Mapa odsyłaczy</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a href="uklady.html">Układy stron</a></li>
+            <li><a href="pioNIEwe.html">Menu pionowe</a></li>
+            <li><a href="poziome.html">Menu poziome</a></li>
+            <li><a href="formularze.html">Formularze</a></li>
+            <li><a href="grupowany.html">Formularz grupowany</a></li>
+            <li><a href="plynne.html">Układy płynne</a></li>
+            <li><a href="multimedia.html" id="a_active2">Multimedia</a></li>
+            <li><a href="hybrydowe.html">Układy hybrydowe</a></li>
+          </ul>
+      </div>
+    </div>
+      <div class="main">
+          <h2>Multimedia</h2>
+          <p>Czasami trzeba zamieścić na stronie internetowej muzykę lub film. HTML5 dostarcza nam w tym celu specjalne znaczniki.
+            <div class="example">
+              <h3>Audio</h3>
+              <pre>
+  &lt;audio controls&gt;
+    &lt;source src=&quot;media/sneaky.ogg&quot; type=&quot;audio/ogg&quot;&gt;
+    &lt;source src=&quot;media/sneaky.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+    Twoja przeglądarka nie obsługuje znacznika audio.
+  &lt;/audio&gt;</pre>
+          Efekt poniżej:<br />
+          <audio controls>
+            <source src="media/sneaky.ogg" type="audio/ogg">
+            <source src="media/sneaky.mp3" type="audio/mpeg">
+              Twoja przeglądarka nie obsługuje znacznika audio.
+          </audio>
+            </div>
+            <span class="tag">&lt;audio&gt;</span> - znacznik definiujący dźwięk<br />
+            <span class="tag">&lt;source&gt;</span> - źródło dźwięku<br />
+            <span class="tag">controls</span> - atrybut, dzięki któremu wyświetlane są kontrolki (play/stop)<br />
+            <p>
+              Obecnie, 3 formaty dźwięku są wspierane przez przeglądarki: MP3, Wav, Ogg:
+              <table class="audio">
+  <tr>
+  <th>Przeglądarka</th>
+  <th>MP3</th>
+  <th>Wav</th>
+  <th>Ogg</th>
+  </tr>
+  <tr style="background-color:#f1f1f1;">
+  <td>Internet Explorer</td>
+  <td>TAK</td>
+  <td>NIE</td>
+  <td>NIE</td>
+  </tr>
+  <tr>
+  <td>Chrome</td>
+  <td>TAK</td>
+  <td>TAK</td>
+  <td>TAK</td>
+  </tr>
+  <tr style="background-color:#f1f1f1;">
+  <td>Firefox</td>
+  <td>TAK</td>
+  <td>TAK</td>
+  <td>TAK</td>
+  </tr>
+  <tr>
+  <td>Safari</td>
+  <td>TAK</td>
+  <td>TAK</td>
+  <td>NIE</td>
+  </tr>
+  <tr style="background-color:#f1f1f1;">
+  <td>Opera</td>
+  <td>TAK</td>
+  <td>TAK</td>
+  <td>TAK</td>
+  </tr>
+  </table>
+  <p>Atrybuty
+    <table class="audio audio_atrybuty">
+  <tr>
+  <th>Atrybut</th>
+  <th>Wartość</th>
+  <th>Opis</th>
+  </tr>
+  <tr style="background-color:#f1f1f1;">
+  <td><a href="https://www.w3schools.com/tags/att_audio_autoplay.asp">autoplay</a></td>
+  <td>autoplay</td>
+  <td>Sprawia, że dźwięk odtworzy się automatycznie, gdy się załaduje</td>
+  </tr>
+  <tr>
+  <td><a href="https://www.w3schools.com/tags/att_audio_controls.asp">controls</a></td>
+  <td>controls</td>
+  <td>sprawia, że wyświetlane są kontrolki (play/stop)</td>
+  </tr>
+  <tr style="background-color:#f1f1f1;">
+  <td><a href="https://www.w3schools.com/tags/att_audio_loop.asp">loop</a></td>
+  <td>loop</td>
+  <td>Sprawia, że dźwięk się zapętla</td>
+  </tr>
+  <tr>
+  <td><a href="https://www.w3schools.com/tags/att_audio_muted.asp">muted</a></td>
+  <td>muted</td>
+  <td>Sprawia, że dźwięk ma być wyciszony</td>
+  </tr>
+  <tr style="background-color:#f1f1f1;">
+  <td><a href="https://www.w3schools.com/tags/att_audio_preload.asp">preload</a></td>
+  <td>auto<br />metadata<br />NIEne</td>
+  <td>Precyzuje, czy i jak dźwięk ma być ładowany podczas ładowania strony</td>
+  </tr>
+  <tr>
+  <td><a href="https://www.w3schools.com/tags/att_audio_src.asp">src</a></td>
+  <td><em>URL</em></td>
+  <td>Wskazuje adres pliku dźwiękowego</td>
+  </tr>
+  </table><br />
+  <h2>Wideo</h2>
+  <p>Film umieszcza się podobnie jak dźwięk
+    <div class="example">
+      <h3>Wideo</h3>
+      <pre>
+  &lt;video width=&quot;320&quot; height=&quot;240&quot; controls&gt;
+    &lt;source src=&quot;media/building.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    &lt;source src=&quot;media/building.ogg&quot; type=&quot;video/ogg&quot;&gt;
+    Twoja przeglądarka nie obsługuje znacznika video.
+  &lt;/video&gt;</pre>
+    Efekt poniżej:<br />
+    <video width="320" height="240" controls>
+      <source src="media/building.mp4" type="video/mp4">
+      <source src="media/building.ogg" type="video/ogg">
+      Twoja przeglądarka nie obsługuje znacznika video
+    </video>
+    </div>
+    <span class="tag">&lt;video&gt;</span> - znacznik definiujący wideo<br />
+    <span class="tag">&lt;source&gt;</span> - źródło wideo<br />
+    <span class="tag">width="320" height="240"</span> - wymiary odtwarzacza w pikselach<br />
+    <p>
+      Obecnie, 3 formaty wideo są wspierane przez przeglądarki: MP4, WebM, Ogg:
+      <table class="audio">
+  <tr>
+  <th>Przeglądarka</th>
+  <th>MP4</th>
+  <th>WebM</th>
+  <th>Ogg</th>
+  </tr>
+  <tr style="background-color:#f1f1f1;">
+  <td>Internet Explorer</td>
+  <td>TAK</td>
+  <td>NIE</td>
+  <td>NIE</td>
+  </tr>
+  <tr>
+  <td>Chrome</td>
+  <td>TAK</td>
+  <td>TAK</td>
+  <td>TAK</td>
+  </tr>
+  <tr style="background-color:#f1f1f1;">
+  <td>Firefox</td>
+  <td>TAK<br />from Firefox 21<br />from Firefox 30 for Linux</td>
+  <td>TAK</td>
+  <td>TAK</td>
+  </tr>
+  <tr>
+  <td>Safari</td>
+  <td>TAK</td>
+  <td>NIE</td>
+  <td>NIE</td>
+  </tr>
+  <tr style="background-color:#f1f1f1;">
+  <td>Opera</td>
+  <td>TAK<br />From Opera 25</td>
+  <td>TAK</td>
+  <td>TAK</td>
+  </tr>
+  </table>
+  <p>Atrybuty dla wideo są takie same jak dla dźwięku. Dodatkowo występują tutaj wspomniane wcześniej <span class="tag">width i height</span><br /><br />
+    <em>Więcej o audio: <a href="https://www.w3schools.com/tags/tag_audio.asp">https://www.w3schools.com/tags/tag_audio.asp</a></em><br />
+    <em>Więcej o wideo: <a href="https://www.w3schools.com/tags/tag_video.asp">https://www.w3schools.com/tags/tag_video.asp</a></em>
+      </div>
+    </div>
+    <footer>
+      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
+      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+    </footer>
+  </div>
+</body>
+</html>

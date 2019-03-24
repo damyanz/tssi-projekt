@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Damian Zapalski" />
+  <meta name="generator" content="Atom" />
+  <meta name="keywords" content="kurs, html, css" />
+  <title>Kurs HTML &amp; CSS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
+        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
+        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
+      </div>
+      <div class="menu_top">
+        <ul>
+          <li><a href="index.html">STRONA GŁÓWNA</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html" id="a_active">CSS</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="box">
+      <div class="left">
+        <div class="menu_left">
+          <h4>CSS</h4>
+          <ul>
+            <li><a href="css.html">Czym jest CSS?</a></li>
+            <li><a href="selektory.html">Selektory</a></li>
+            <li><a href="osadzanie.html">Osadzanie CSS'a</a></li>
+            <li><a href="przyklady.html">Przykłady</a></li>
+            <li><a href="kaskadowosc.html">Kaskadowość</a></li>
+            <li><a href="komentarzecss.html">Komentarze</a></li>
+            <li><a href="pudelko.html">Model pudełkowy</a></li>
+            <li><a href="pozycjonowanie.html">Pozycjonowanie</a></li>
+            <li><a href="tlo.html"  id="a_active2">Grafika jako tło</a></li>
+            <li><a href="gradient.html">Gradienty</a></li>
+            <li><a href="przeksztalcenia.html">Przekształcenia</a></li>
+            <li><a href="animacje.html">Animacje</a></li>
+          </ul>
+      </div>
+    </div>
+      <div class="main">
+        <h2>Grafika jako tło</h2>
+        <p>CSS pozwala nam na ustawienie tła obrazkowego
+          <div class="example">
+            <h3>Przykład</h3>
+            <pre>
+&lt;div id="obrazek"&gt;Lorem ipsum...&lt;/div&gt;</pre>
+<pre class="half2">
+#obrazek{
+  width: 450px;
+  height: 281px;
+  background-image: url("img/bg.jpg");
+  text-align: center;
+}
+</pre>
+<div style="width: 450px;height: 281px;background-image: url(img/bg.jpg);text-align: center;">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div><br />
+          </div>
+Dodatkowe właściwości
+<table>
+  <tr>
+    <td style="width:200px;padding:4px 4px 4px 8px;"><strong>Właściwość</strong></td><td style="width:500px;"><strong>Opis</strong></td>
+  </tr>
+  <tr style="background-color:#f1f1f1;">
+    <td style="width:200px;padding:4px 4px 4px 8px;"><a href="https://www.w3schools.com/cssref/pr_background-repeat.asp">background-repeat</a></td><td style="width:500px;padding-left:4px;">Powtarzanie się tła</td>
+  </tr>
+  <tr>
+    <td style="width:200px;padding:4px 4px 4px 8px;"><a href="https://www.w3schools.com/cssref/pr_background-attachment.asp">background-attachment</a></td><td style="width:500px;padding-left:4px">Zaczepienie tła</td>
+  </tr>
+  <tr style="background-color:#f1f1f1;">
+    <td style="width:200px;padding:4px 4px 4px 8px;"><a href="https://www.w3schools.com/cssref/pr_background-position.asp">background-position</a></td><td style="width:500px;padding-left:4px;">Pozycja tła</td>
+  </tr>
+</table><br />
+<em>Więcej o tłach <a href="https://www.w3schools.com/cssref/css3_pr_background.asp">https://www.w3schools.com/cssref/css3_pr_background.asp</a></em>
+</div>
+      </div>
+    <footer>
+      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
+      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Damian Zapalski" />
+  <meta name="generator" content="Atom" />
+  <meta name="keywords" content="kurs, html, css" />
+  <title>Kurs HTML &amp; CSS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
+        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
+        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
+      </div>
+      <div class="menu_top">
+        <ul>
+          <li><a href="index.html">STRONA GŁÓWNA</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html" id="a_active">CSS</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="box">
+      <div class="left">
+        <div class="menu_left">
+          <h4>CSS</h4>
+          <ul>
+            <li><a href="css.html">Czym jest CSS?</a></li>
+            <li><a href="selektory.html">Selektory</a></li>
+            <li><a href="osadzanie.html">Osadzanie CSS'a</a></li>
+            <li><a href="przyklady.html"  id="a_active2">Przykłady</a></li>
+            <li><a href="kaskadowosc.html">Kaskadowość</a></li>
+            <li><a href="komentarzecss.html">Komentarze</a></li>
+            <li><a href="pudelko.html">Model pudełkowy</a></li>
+            <li><a href="pozycjonowanie.html">Pozycjonowanie</a></li>
+            <li><a href="tlo.html">Grafika jako tło</a></li>
+            <li><a href="gradient.html">Gradienty</a></li>
+            <li><a href="przeksztalcenia.html">Przekształcenia</a></li>
+            <li><a href="animacje.html">Animacje</a></li>
+          </ul>
+      </div>
+    </div>
+      <div class="main">
+        <h2>Przykłady formatowania CSS</h2>
+        <div class="example">
+          <h3>Przykład 1</h3>
+          Zmiana koloru tekstu
+          <pre>
+&lt;p style="color: red;"&gt;czerwony&lt;/p&gt;
+&lt;p style="color: green;"&gt;zielony&lt;/p&gt;
+&lt;p style="color: blue;"&gt;niebieski&lt;/p&gt;
+&lt;p style="color: yellow;"&gt;żółty&lt;/p&gt;</pre>
+Efekt:
+<p style="color:red;">czerwony</p>
+<p style="color:green;">zielony</p>
+<p style="color:blue;">niebieski</p>
+<p style="color:yellow;">żółty</p>
+        </div>
+        <div class="example">
+          <h3>Przykład 2</h3>
+          Zmiana tła i rozmiaru czcionki
+          <pre>
+&lt;p style="background-color: red; font-size:20px;"&gt;czerwony&lt;/p&gt;
+&lt;p style="background-color: green; font-size:21px;"&gt;zielony&lt;/p&gt;
+&lt;p style="background-color: blue; font-size:11px;"&gt;niebieski&lt;/p&gt;
+&lt;p style="background-color: yellow; font-size:8px;"&gt;żółty&lt;/p&gt;</pre>
+  Efekt:
+  <p style="background-color:red; font-size:20px;">czerwony</p>
+  <p style="background-color:green; font-size:21px;">zielony</p>
+  <p style="background-color:blue; font-size:11px;">niebieski</p>
+  <p style="background-color:yellow; font-size:8px;">żółty</p>
+</div>
+<div class="example">
+  <h3>Przykład 3</h3>
+  Zmiana koloru czcionki wszystkich nagłówków stopnia 1 poprzez zewnętrzny arkusz stylów
+  <pre class="half2">
+h1{
+  color: rgb(123,123,123);
+}
+</pre>
+Efekt:
+<h1 style="color:rgb(123,123,123);">HTML</h1>
+<h1 style="color:rgb(123,123,123);">CSS</h1>
+<h1 style="color:rgb(123,123,123);">W3DZ</h1>
+</div>
+<div class="example">
+  <h3>Przykład 4</h3>
+  Ustawienie podkreślenia zarówno dla nagłówka 1 stopnia jak i 2
+  <pre class="half2">
+h1, h2{
+  text-decoration: underline;
+}
+</pre>
+Efekt:
+<h1 style="text-decoration:underline;">HTML</h1>
+<h2 style="text-decoration:underline;">CSS</h2>
+</div><br />
+<em>O wiele więcej przykładów CSS <a href="https://www.w3schools.com/css/css_examples.asp">https://www.w3schools.com/css/css_examples.asp</a></em>
+      </div>
+      </div>
+    <footer>
+      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
+      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Damian Zapalski" />
+  <meta name="generator" content="Atom" />
+  <meta name="keywords" content="kurs, html, css" />
+  <title>Kurs HTML &amp; CSS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
+        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
+        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
+      </div>
+      <div class="menu_top">
+        <ul>
+          <li><a href="index.html">STRONA GŁÓWNA</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html" id="a_active">CSS</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="box">
+      <div class="left">
+        <div class="menu_left">
+          <h4>CSS</h4>
+          <ul>
+            <li><a href="css.html">Czym jest CSS?</a></li>
+            <li><a href="selektory.html">Selektory</a></li>
+            <li><a href="osadzanie.html">Osadzanie CSS'a</a></li>
+            <li><a href="przyklady.html">Przykłady</a></li>
+            <li><a href="kaskadowosc.html">Kaskadowość</a></li>
+            <li><a href="komentarzecss.html">Komentarze</a></li>
+            <li><a href="pudelko.html">Model pudełkowy</a></li>
+            <li><a href="pozycjonowanie.html"  id="a_active2">Pozycjonowanie</a></li>
+            <li><a href="tlo.html">Grafika jako tło</a></li>
+            <li><a href="gradient.html">Gradienty</a></li>
+            <li><a href="przeksztalcenia.html">Przekształcenia</a></li>
+            <li><a href="animacje.html">Animacje</a></li>
+          </ul>
+      </div>
+    </div>
+      <div class="main">
+        <h2>Pozycjonowanie</h2><br />
+        <p>Istnieją 4 rodzaje pozycjonowania
+          <div class="example">
+            <h3>1. position: static;</h3>
+            Domyślne pozycjonowanie
+            <pre class="half2">
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}</pre>
+            <div style="position:static;border:3px solid #73AD21">Ten div jest pozycjonowany statycznie</div><br />
+          </div>
+          <div class="example">
+            <h3>2. position: relative;</h3>
+            Element pozycjonowany jest relatywnie względem swojej normalnej pozycji
+            <pre class="half2">
+div.relative{
+  position: relative;
+  left:30px;
+  border: 3px solid #73AD21;
+}</pre>
+            <div style="position:relative;left:30px;border:3px solid #73AD21">Ten div jest pozycjonowany relatywnie</div><br />
+          </div>
+          <div class="example">
+            <h3>3. position: fixed;</h3>
+            Element jest zawsze w tej samej pozycji względem okna przeglądarki, nawet gdy użytkownik przewija stronę.
+            <pre class="half2">
+div.fixed{
+  position: fixed;
+  bottom:0;
+  right:0;
+  width:150px;
+  border: 3px solid #73AD21;
+}</pre>
+<em>Jest w prawym dolnym rogu przeglądarki :)</em>
+            <div style="width:150px;position:fixed;bottom:0;right:0;border:3px solid #73AD21">Ten div jest przylepiony do okna przeglądarki</div><br />
+          </div>
+          <div class="example">
+            <h3>4. position: absolute;</h3>
+            Element jest pozycjonowany relatywnie względem najbliższego pozycjonowanego elementu, w którym się znajduje.
+            <pre class="half2">
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}</pre>
+            <div style="width:400px;height:200px;position:relative;border:3px solid #73AD21">Ten div jest pozycjonowany relatywnie
+            <div style="width:200px;height:100px;position:absolute;top:80px;right:0;border:3px solid #73AD21">Ten div jest pozycjonowany absolutnie</div></div><br />
+          </div>
+          <em>Więcej o pozycjonowaniu <a href="https://www.w3schools.com/css/css_positioning.asp">https://www.w3schools.com/css/css_positioning.asp</a></em>
+          </div>
+      </div>
+    <footer>
+      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
+      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+    </footer>
+  </div>
+</body>
+</html>
