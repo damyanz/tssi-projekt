@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trzykolumnowy układ hybrydowy wykorzystujący ujemne marginesy</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+    body {
+        margin: 20px;
+        min-width: 750px;
+    }
+
+    .hybrydowy_um {
+        background: red;
+    }
+
+    .hybrydowy_um .pojemnik {
+        width: 100%;
+        margin-left: -175px;
+        float: right;
+        background: blue;
+    }
+
+    .hybrydowy_um .kolumnaPlynna {
+        margin-left: 175px;
+        background: yellow;
+    }
+
+    .hybrydowy_um .lewa {
+        width: 175px;
+        float: left;
+        background: green;
+    }
+
+    .hybrydowy_um .prawa {
+       float: right;
+       width: 325px;
+       background: fuchsia;
+    }
+
+    .hybrydowy_um .tresc {
+       margin-right: 325px;
+       background: pink;
+    }
+
+    .czyszczenie {
+        clear: both;
+        height: 0;
+    }
+
+
+    </style>
+  </head>
+<body>
+
+
+<!--
+
+    hybrydowy_um: cały element (bez CSS)
+    lewa: stała szerokość 175
+    pojemnik/kolumnaPlynna: wypełnia okno
+        prawa: stała szerokość 325, float right
+        treść: margin-right
+
+
+Kolejność w kodzie HTML:
+    * prawa
+    * treść
+    * lewa
+
+
+Lub:
+Kolejność LTP
+oraz
+
+
+#lewa {
+    z-index: 1;
+    position: relative;
+}
+
+
+-->
+
+
+<div class="hybrydowy_um">
+    <div class="pojemnik">
+        <div class="kolumnaPlynna">
+            <div class="prawa">
+                prawy panel<br />prawy panel<br />prawy panel<br />prawy panel<br />
+                prawy panel<br />prawy panel<br />prawy panel<br />prawy panel<br />
+                prawy panel<br />prawy panel<br />prawy panel<br />prawy panel<br />
+            </div>
+            <div class="tresc">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse nunc pede, aliquet at, tincidunt id, sodales in, nulla. Pellentesque viverra ipsum ac quam. In hac habitasse platea dictumst. In eget tellus. Nullam placerat, felis in scelerisque sollicitudin, magna velit dictum mi, ac molestie quam urna nec nibh. Morbi facilisis. Suspendisse pulvinar nisl at elit. Sed euismod orci sed est. Donec tempor tellus sit amet ante. Aenean quis leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis sapien. Nam elementum velit nec mauris.<br /><br />
+                Curabitur non turpis quis felis placerat luctus. Pellentesque id mi sit amet quam fermentum convallis. Duis nec lacus. Donec laoreet. Suspendisse vel nisl eget nibh dapibus ultricies. Donec ornare. Vestibulum lorem. In massa neque, dapibus a, tempor ut, ultricies at, neque. Curabitur at risus. Sed ut magna vel odio molestie tincidunt. Mauris consectetuer, velit a elementum malesuada, pede mauris interdum risus, vel commodoarcu risus eget tellus. Proin sagittis, felis non dictum sodales, libero est varius diam, eget vehicula lorem metus eu velit.<br /><br />
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse nunc pede, aliquet at, tincidunt id, sodales in, nulla. Pellentesque viverra ipsum ac quam. In hac habitasse platea dictumst. In eget tellus. Nullam placerat, felis in scelerisque sollicitudin, magna velit dictum mi, ac molestie quam urna nec nibh. Morbi facilisis. Suspendisse pulvinar nisl at elit. Sed euismod orci sed est. Donec tempor tellus sit amet ante. Aenean quis leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis sapien. Nam elementum velit nec mauris.<br /><br />
+                Curabitur non turpis quis felis placerat luctus. Pellentesque id mi sit amet quam fermentum convallis. Duis nec lacus. Donec laoreet. Suspendisse vel nisl eget nibh dapibus ultricies. Donec ornare. Vestibulum lorem. In massa neque, dapibus a, tempor ut, ultricies at, neque. Curabitur at risus. Sed ut magna vel odio molestie tincidunt. Mauris consectetuer, velit a elementum malesuada, pede mauris interdum risus, vel commodoarcu risus eget tellus. Proin sagittis, felis non dictum sodales, libero est varius diam, eget vehicula lorem metus eu velit.<br /><br />
+            </div>
+            <div class="czyszczenie"></div>
+        </div>
+        <div class="czyszczenie"></div>
+    </div>
+    <div class="lewa">
+        lewy panel<br />lewy panel<br />lewy panel<br />lewy panel<br />
+    </div>
+    <div class="czyszczenie"></div>
+</div>
+
+</body>
+</html>
