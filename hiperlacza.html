@@ -1,103 +1,117 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="author" content="Damian Zapalski" />
-  <meta name="generator" content="Atom" />
-  <meta name="keywords" content="kurs, html, css" />
-  <title>Kurs HTML &amp; CSS</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="banner">
-        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
-        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
-        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
-      </div>
-      <div class="menu_top">
-        <ul>
-          <li><a href="index.html">STRONA GŁÓWNA</a></li>
-          <li><a href="html.html"  id="a_active">HTML</a></li>
-          <li><a href="css.html">CSS</a></li>
-        </ul>
-      </div>
-    </header>
-    <div class="box">
-      <div class="left">
-        <div class="menu_left">
-          <h4>HTML</h4>
-          <ul>
-            <li><a href="html.html">Czym jest HTML?</a></li>
-            <li><a href="struktura.html">Podstawowa struktura</a></li>
-            <li><a href="znaczniki.html">Znaczniki</a></li>
-            <li><a href="komentarze.html">Komentarze</a></li>
-            <li><a href="meta.html">&lt;meta&gt; i &lt;title&gt;</a></li>
-            <li><a href="listy.html">Listy</a></li>
-            <li><a href="zagniezdzona.html">Lista zagnieżdżona</a></li>
-            <li><a href="definicji.html">Lista definicji</a></li>
-            <li><a href="grafika.html">Grafika</a></li>
-            <li><a href="hiperlacza.html" id="a_active2">Hiperłącza i kotwice</a></li>
-            <li><a href="mapa.html">Mapa odsyłaczy</a></li>
-            <li><a href="tabele.html">Tabele</a></li>
-            <li><a href="uklady.html">Układy stron</a></li>
-            <li><a href="pionowe.html">Menu pionowe</a></li>
-            <li><a href="poziome.html">Menu poziome</a></li>
-            <li><a href="formularze.html">Formularze</a></li>
-            <li><a href="grupowany.html">Formularz grupowany</a></li>
-            <li><a href="plynne.html">Układy płynne</a></li>
-            <li><a href="multimedia.html">Multimedia</a></li>
-            <li><a href="hybrydowe.html">Układy hybrydowe</a></li>
-          </ul>
-      </div>
-    </div>
-      <div class="main">
-        <h2>Hiperłącza</h2>
-        <p><strong>Hiperłącze</strong> - odwołanie do innego dokumentu lub innego miejsca w danym dokumencie. Tworzymy je za pomocą znacznika <span class="tag">&lt;a href="..."&gt;</span>.
-          Odnośnikiem może być nie tylko tekst, ale każdy element, np. obrazek lub blok.
-          <ul>
-            <li><span class="tag">href="..."</span> - miejsce, do którego prowadzi odnośnik</li>
-          </ul>
-          <div class="example">
-            <h3>Przykład 1</h3>
-            <pre>
-&lt;a href="index.html"&gt;Strona główna&lt;/a&gt;</pre>
-          <em>Odnośnik wyświetli się w ten sposób:</em><br/>
-          <a href="index.html">Strona główna</a>
-          </div>
-          <div class="example">
-            <h3>Przykład 2</h3>
-            <pre>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Damian Zapalski" />
+		<meta name="generator" content="Atom" />
+		<meta name="keywords" content="kurs, html, css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kurs HTML &amp; CSS</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+		<script src="./js/script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="banner">
+					<a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a
+					><br />
+					<p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p>
+					<span class="green">ZIELONYCH</span> <img src="img/html5.png" alt="html5" /><img src="img/css3.png" alt="css3" />
+				</div>
+				<div class="menu_top">
+					<ul>
+						<li><a href="index.html">STRONA GŁÓWNA</a></li>
+						<li><a href="html.html" id="a_active">HTML</a></li>
+						<li><a href="css.html">CSS</a></li>
+					</ul>
+				</div>
+			</header>
+			<div class="box">
+				<div class="left">
+					<div class="menu_left">
+						<div class="mobileMenuTrigger">
+							<div class="line"></div>
+						</div>
+						<h4>HTML</h4>
+						<ul>
+							<li><a href="html.html">Czym jest HTML?</a></li>
+							<li><a href="struktura.html">Podstawowa struktura</a></li>
+							<li><a href="znaczniki.html">Znaczniki</a></li>
+							<li><a href="komentarze.html">Komentarze</a></li>
+							<li><a href="meta.html">&lt;meta&gt; i &lt;title&gt;</a></li>
+							<li><a href="listy.html">Listy</a></li>
+							<li><a href="zagniezdzona.html">Lista zagnieżdżona</a></li>
+							<li><a href="definicji.html">Lista definicji</a></li>
+							<li><a href="grafika.html">Grafika</a></li>
+							<li><a href="hiperlacza.html" id="a_active2">Hiperłącza i kotwice</a></li>
+							<li><a href="mapa.html">Mapa odsyłaczy</a></li>
+							<li><a href="tabele.html">Tabele</a></li>
+							<li><a href="uklady.html">Układy stron</a></li>
+							<li><a href="pionowe.html">Menu pionowe</a></li>
+							<li><a href="poziome.html">Menu poziome</a></li>
+							<li><a href="formularze.html">Formularze</a></li>
+							<li><a href="grupowany.html">Formularz grupowany</a></li>
+							<li><a href="plynne.html">Układy płynne</a></li>
+							<li><a href="multimedia.html">Multimedia</a></li>
+							<li><a href="hybrydowe.html">Układy hybrydowe</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="main">
+					<h2>Hiperłącza</h2>
+					<p>
+						<strong>Hiperłącze</strong> - odwołanie do innego dokumentu lub innego miejsca w danym dokumencie. Tworzymy je za pomocą znacznika
+						<span class="tag">&lt;a href="..."&gt;</span>. Odnośnikiem może być nie tylko tekst, ale każdy element, np. obrazek lub blok.
+					</p>
+
+					<ul>
+						<li><span class="tag">href="..."</span> - miejsce, do którego prowadzi odnośnik</li>
+					</ul>
+					<div class="example">
+						<h3>Przykład 1</h3>
+						<div class="preWrapper"><pre>&lt;a href="index.html"&gt;Strona główna&lt;/a&gt;</pre></div>
+						<em>Odnośnik wyświetli się w ten sposób:</em><br />
+						<a href="index.html">Strona główna</a>
+					</div>
+					<div class="example">
+						<h3>Przykład 2</h3>
+						<div class="preWrapper">
+							<pre>
 &lt;a href="https://www.w3schools.com/"&gt;
   &lt;img src="img/w3schools.png" alt="error" /&gt;
-&lt;/a&gt;</pre>
-          <em>Odnośnik wyświetli się w ten sposób:</em><br/>
-          <a href="https://www.w3schools.com/"><img src="img/w3schools.png" alt="brak obrazka" /></a>
-          </div>
-          <h2>Kotwice</h2>
-          <p>Kotwicą nazywamy pewne miejsce zaznaczone na stronie. To swego rodzaju zakładka, do której możemy się przenieść poprzez hiperłącze. Kotwicę definiujemy podobnie do hiperłącza,
-            jednak zamiast atrybutu <span class="tag">href="..."</span> używamy <span class="tag">a="nazwa_kotwicy"</span>. Aby odwołać się do danej zakładki, tworzymy hiperłącze i za ścieżką do pliku
-            dopisujemy <span class="tag">#nazwa_kotwicy</span>
-            <div class="example">
-              <h3>Kotwica</h3>
-              <em>Poniższy kod umieszczamy w miejscu, gdzie ma się znaleźć kotwica</em>
-              <pre>&lt;a id=&quot;punktowana&quot;&gt;...&lt;/a&gt;</pre>
-              <em>Poniższy to hiperłącze w bieżącym pliku</em>
-              <pre>
-  &lt;a href="listy.html#punktowana"&gt;Lista punktowana&lt;/a&gt;</pre>
-            <em>Odnośnik wyświetli się w ten sposób:</em><br/>
-            <a href="listy.html#punktowana">Lista punktowana</a><br />
-            <em>i przeniesie nas do podstrony listy, do przykładu listy punktowanej</em>
-            </div>
-            <em>Więcej o kotwicach <a href="https://www.w3schools.com/tags/att_a_name.asp">https://www.w3schools.com/tags/att_a_name.asp</a></em>
-      </div>
-    </div>
-    <footer>
-      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
-      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
-    </footer>
-  </div>
-</body>
+&lt;/a&gt;</pre
+							>
+						</div>
+						<em>Odnośnik wyświetli się w ten sposób:</em><br />
+						<a href="https://www.w3schools.com/"><img src="img/w3schools.png" alt="brak obrazka"/></a>
+					</div>
+					<h2>Kotwice</h2>
+					<p>
+						Kotwicą nazywamy pewne miejsce zaznaczone na stronie. To swego rodzaju zakładka, do której możemy się przenieść poprzez hiperłącze.
+						Kotwicę definiujemy podobnie do hiperłącza, jednak zamiast atrybutu <span class="tag">href="..."</span> używamy
+						<span class="tag">a="nazwa_kotwicy"</span>. Aby odwołać się do danej zakładki, tworzymy hiperłącze i za ścieżką do pliku dopisujemy
+						<span class="tag">#nazwa_kotwicy</span>
+					</p>
+
+					<div class="example">
+						<h3>Kotwica</h3>
+						<em>Poniższy kod umieszczamy w miejscu, gdzie ma się znaleźć kotwica</em>
+						<div class="preWrapper"><pre>&lt;a id=&quot;punktowana&quot;&gt;...&lt;/a&gt;</pre></div>
+						<em>Poniższy to hiperłącze w bieżącym pliku</em>
+						<div class="preWrapper"><pre>  &lt;a href="listy.html#punktowana"&gt;Lista punktowana&lt;/a&gt;</pre></div>
+						<em>Odnośnik wyświetli się w ten sposób:</em><br />
+						<a href="listy.html#punktowana">Lista punktowana</a><br />
+						<em>i przeniesie nas do podstrony listy, do przykładu listy punktowanej</em>
+					</div>
+					<em>Więcej o kotwicach <a href="https://www.w3schools.com/tags/att_a_name.asp">https://www.w3schools.com/tags/att_a_name.asp</a></em>
+				</div>
+			</div>
+			<footer>
+				COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br />
+				<p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+			</footer>
+		</div>
+	</body>
 </html>

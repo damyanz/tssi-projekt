@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="author" content="Damian Zapalski" />
-  <meta name="generator" content="Atom" />
-  <meta name="keywords" content="kurs, html, css" />
-  <title>Kurs HTML &amp; CSS</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="banner">
-        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
-        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
-        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
-      </div>
-      <div class="menu_top">
-        <ul>
-          <li><a href="index.html" id="a_active">STRONA GŁÓWNA</a></li>
-          <li><a href="html.html">HTML</a></li>
-          <li><a href="css.html">CSS</a></li>
-        </ul>
-      </div>
-    </header>
-    <div class="box">
-      <div class="left">
-        <div class="menu_left">
-          <h4>KURS HTML &amp; CSS</h4>
-          <ul>
-            <li><a href="index.html">Wprowadzenie</a></li>
-            <li><a href="edytor.html">Od czego zacząć</a></li>
-            <li><a href="validator.html">Validator</a></li>
-            <li><a href="oznaczenia.html" id="a_active2">Oznaczenia</a></li>
-            <li><a href="zasady.html">5 zasad HTML</a></li>
-            <li><a href="encje.html">Encje</a></li>
-          </ul>
-      </div>
-    </div>
-      <div class="main">
-        <h2>Oznaczenia</h2>
-        <p>Przykładowe fragmenty kodu <strong>HTML</strong> w niniejszym kursie zostały oznaczone ramką z <span style="color:rgb(182,81,7);">pomarańczową</span> linią po lewej stronie:
-          <div class="example">
-            <h3>Kod HTML</h3>
-            <pre>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Damian Zapalski" />
+		<meta name="generator" content="Atom" />
+		<meta name="keywords" content="kurs, html, css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kurs HTML &amp; CSS</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+		<script src="./js/script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="banner">
+					<a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a
+					><br />
+					<p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p>
+					<span class="green">ZIELONYCH</span> <img src="img/html5.png" alt="html5" /><img src="img/css3.png" alt="css3" />
+				</div>
+				<div class="menu_top">
+					<ul>
+						<li><a href="index.html" id="a_active">STRONA GŁÓWNA</a></li>
+						<li><a href="html.html">HTML</a></li>
+						<li><a href="css.html">CSS</a></li>
+					</ul>
+				</div>
+			</header>
+			<div class="box">
+				<div class="left">
+					<div class="menu_left">
+						<div class="mobileMenuTrigger">
+							<div class="line"></div>
+						</div>
+						<h4>KURS HTML &amp; CSS</h4>
+						<ul>
+							<li><a href="index.html">Wprowadzenie</a></li>
+							<li><a href="edytor.html">Od czego zacząć</a></li>
+							<li><a href="validator.html">Validator</a></li>
+							<li><a href="oznaczenia.html" id="a_active2">Oznaczenia</a></li>
+
+							<li><a href="encje.html">Encje</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="main">
+					<h2>Oznaczenia</h2>
+					<p>
+						Przykładowe fragmenty kodu <strong>HTML</strong> w niniejszym kursie zostały oznaczone ramką z
+						<span style="color:rgb(182,81,7);">pomarańczową</span> linią po lewej stronie:
+					</p>
+					<div class="example">
+						<h3>Kod HTML</h3>
+						<div class="preWrapper">
+							<pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -56,28 +66,36 @@
   &lt;p&gt;Tu wpisuje się treść strony&lt;/p&gt;
 
   &lt;/body&gt;
-  &lt;/html&gt;</pre>
-          </div>
-          natomiast fragmenty kodu <strong>CSS</strong> zostały oznaczone ramką z <span style="color:blue;">granatową</span> linią po lewej stronie:
-        <div class="example">
-          <h3>Kod CSS</h3>
-          <pre class="half2">
+  &lt;/html&gt;</pre
+							>
+						</div>
+					</div>
+					natomiast fragmenty kodu <strong>CSS</strong> zostały oznaczone ramką z <span style="color:blue;">granatową</span> linią po lewej stronie:
+					<div class="example">
+						<h3>Kod CSS</h3>
+						<div class="preWrapper half2">
+							<pre>
 #pojemnik{
     width:500px;
     margin:0 auto;
     background-color:gray;
-}</pre>
-        </div>
-        <p>Ważne znaczniki, atrybuty i właściwości zostały oznaczone kolorem <span style="color:crimson;">czerwonym</span> i <span style="background-color:#f1f1f1;">szarym tłem</span>:<br />
-          <span class="tag">name="..."</span><br />
-          <span class="tag">&lt;li&gt;</span><br />
-          <span class="tag">width="..."</span>
-      </div>
-    </div>
-    <footer>
-      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
-      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
-    </footer>
-  </div>
-</body>
+}</pre
+							>
+						</div>
+					</div>
+					<p>
+						Ważne znaczniki, atrybuty i właściwości zostały oznaczone kolorem <span style="color:crimson;">czerwonym</span> i
+						<span style="background-color:#f1f1f1;">szarym tłem</span>:<br />
+						<span class="tag">name="..."</span><br />
+						<span class="tag">&lt;li&gt;</span><br />
+						<span class="tag">width="..."</span>
+					</p>
+				</div>
+			</div>
+			<footer>
+				COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br />
+				<p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+			</footer>
+		</div>
+	</body>
 </html>

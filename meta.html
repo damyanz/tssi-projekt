@@ -1,66 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="author" content="Damian Zapalski" />
-  <meta name="generator" content="Atom" />
-  <meta name="keywords" content="kurs, html, css" />
-  <title>Kurs HTML &amp; CSS</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="banner">
-        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
-        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
-        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
-      </div>
-      <div class="menu_top">
-        <ul>
-          <li><a href="index.html">STRONA GŁÓWNA</a></li>
-          <li><a href="html.html"  id="a_active">HTML</a></li>
-          <li><a href="css.html">CSS</a></li>
-        </ul>
-      </div>
-    </header>
-    <div class="box">
-      <div class="left">
-        <div class="menu_left">
-          <h4>HTML</h4>
-          <ul>
-            <li><a href="html.html">Czym jest HTML?</a></li>
-            <li><a href="struktura.html">Podstawowa struktura</a></li>
-            <li><a href="znaczniki.html">Znaczniki</a></li>
-            <li><a href="komentarze.html">Komentarze</a></li>
-            <li><a href="meta.html" id="a_active2">&lt;meta&gt; i &lt;title&gt;</a></li>
-            <li><a href="listy.html">Listy</a></li>
-            <li><a href="zagniezdzona.html">Lista zagnieżdżona</a></li>
-            <li><a href="definicji.html">Lista definicji</a></li>
-            <li><a href="grafika.html">Grafika</a></li>
-            <li><a href="hiperlacza.html">Hiperłącza i kotwice</a></li>
-            <li><a href="mapa.html">Mapa odsyłaczy</a></li>
-            <li><a href="tabele.html">Tabele</a></li>
-            <li><a href="uklady.html">Układy stron</a></li>
-            <li><a href="pionowe.html">Menu pionowe</a></li>
-            <li><a href="poziome.html">Menu poziome</a></li>
-            <li><a href="formularze.html">Formularze</a></li>
-            <li><a href="grupowany.html">Formularz grupowany</a></li>
-            <li><a href="plynne.html">Układy płynne</a></li>
-            <li><a href="multimedia.html">Multimedia</a></li>
-            <li><a href="hybrydowe.html">Układy hybrydowe</a></li>
-          </ul>
-      </div>
-    </div>
-      <div class="main">
-        <h2>&lt;meta&gt; i &lt;title&gt;</h2>
-        <p>
-          Jednym z bardziej rozbudowanych znaczników jest <span class="tag">&lt;meta&gt;</span>. Umieszczamy go w sekcji <span class="tag">&lt;head&gt;</span>.
-          Informacje w nim zawarte nie są wyświetlane, ale są istotne dla przeglądarek i wyszukiwarek np.: rodzaj kodowania lub słowa kluczowe. Opisuje zawartość dokumentu.<br />
-          <div class="example">
-            <h3>Przykład</h3>
-            <pre>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Damian Zapalski" />
+		<meta name="generator" content="Atom" />
+		<meta name="keywords" content="kurs, html, css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kurs HTML &amp; CSS</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+		<script src="./js/script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="banner">
+					<a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a
+					><br />
+					<p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p>
+					<span class="green">ZIELONYCH</span> <img src="img/html5.png" alt="html5" /><img src="img/css3.png" alt="css3" />
+				</div>
+				<div class="menu_top">
+					<ul>
+						<li><a href="index.html">STRONA GŁÓWNA</a></li>
+						<li><a href="html.html" id="a_active">HTML</a></li>
+						<li><a href="css.html">CSS</a></li>
+					</ul>
+				</div>
+			</header>
+			<div class="box">
+				<div class="left">
+					<div class="menu_left">
+						<div class="mobileMenuTrigger">
+							<div class="line"></div>
+						</div>
+						<h4>HTML</h4>
+						<ul>
+							<li><a href="html.html">Czym jest HTML?</a></li>
+							<li><a href="struktura.html">Podstawowa struktura</a></li>
+							<li><a href="znaczniki.html">Znaczniki</a></li>
+							<li><a href="komentarze.html">Komentarze</a></li>
+							<li><a href="meta.html" id="a_active2">&lt;meta&gt; i &lt;title&gt;</a></li>
+							<li><a href="listy.html">Listy</a></li>
+							<li><a href="zagniezdzona.html">Lista zagnieżdżona</a></li>
+							<li><a href="definicji.html">Lista definicji</a></li>
+							<li><a href="grafika.html">Grafika</a></li>
+							<li><a href="hiperlacza.html">Hiperłącza i kotwice</a></li>
+							<li><a href="mapa.html">Mapa odsyłaczy</a></li>
+							<li><a href="tabele.html">Tabele</a></li>
+							<li><a href="uklady.html">Układy stron</a></li>
+							<li><a href="pionowe.html">Menu pionowe</a></li>
+							<li><a href="poziome.html">Menu poziome</a></li>
+							<li><a href="formularze.html">Formularze</a></li>
+							<li><a href="grupowany.html">Formularz grupowany</a></li>
+							<li><a href="plynne.html">Układy płynne</a></li>
+							<li><a href="multimedia.html">Multimedia</a></li>
+							<li><a href="hybrydowe.html">Układy hybrydowe</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="main">
+					<h2>&lt;meta&gt; i &lt;title&gt;</h2>
+					<p>
+						Jednym z bardziej rozbudowanych znaczników jest <span class="tag">&lt;meta&gt;</span>. Umieszczamy go w sekcji
+						<span class="tag">&lt;head&gt;</span>. Informacje w nim zawarte nie są wyświetlane, ale są istotne dla przeglądarek i wyszukiwarek np.:
+						rodzaj kodowania lub słowa kluczowe. Opisuje zawartość dokumentu.<br />
+					</p>
+
+					<div class="example">
+						<h3>Przykład</h3>
+						<div class="preWrapper">
+							<pre>
 &lt;head&gt;
   &lt;meta name="author" content="Damian Zapalski" /&gt;
   &lt;meta name="generator" content="Atom" /&gt;
@@ -69,20 +79,23 @@
   &lt;meta charset="utf-8" /&gt;
   &lt;title&gt;Kurs HTML &amp; CSS&lt;/title&gt;
 &lt;/head&gt;
-            </pre>
-          </div>
-          <span class="tag">name="..."</span> - typ<br />
-          <span class="tag">content="..."</span> - zawartość<br />
-          <span class="tag">&lt;meta charset="utf-8" /&gt;</span> - <strong>Obowiązkowe zdefiniowanie kodowania!!!</strong><br />
-          <span class="tag">&lt;title&gt;...&lt;/title&gt;</span> - <strong>Obowiązkowy tytuł dokumentu!!!</strong><br /><br />
-          <em>Więcej o meta <a href="https://www.w3schools.com/tags/tag_meta.asp">https://www.w3schools.com/tags/tag_meta.asp</a></em><br />
-          <em>Więcej o title <a href="https://www.w3schools.com/tags/tag_title.asp">https://www.w3schools.com/tags/tag_title.asp</a></em>
-      </div>
-    </div>
-    <footer>
-      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
-      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
-    </footer>
-  </div>
-</body>
+            </pre
+							>
+						</div>
+					</div>
+					<span class="tag">name="..."</span> - typ<br />
+					<span class="tag">content="..."</span> - zawartość<br />
+					<span class="tag">&lt;meta charset="utf-8" /&gt;</span> - <strong>Obowiązkowe zdefiniowanie kodowania!!!</strong><br />
+					<span class="tag">&lt;title&gt;...&lt;/title&gt;</span> - <strong>Obowiązkowy tytuł dokumentu!!!</strong><br /><br />
+					<em>Więcej o meta <a href="https://www.w3schools.com/tags/tag_meta.asp">https://www.w3schools.com/tags/tag_meta.asp</a></em
+					><br />
+					<em>Więcej o title <a href="https://www.w3schools.com/tags/tag_title.asp">https://www.w3schools.com/tags/tag_title.asp</a></em>
+				</div>
+			</div>
+			<footer>
+				COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br />
+				<p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+			</footer>
+		</div>
+	</body>
 </html>

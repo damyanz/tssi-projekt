@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="author" content="Damian Zapalski" />
-  <meta name="generator" content="Atom" />
-  <meta name="keywords" content="kurs, html, css" />
-  <title>Kurs HTML &amp; CSS</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="banner">
-        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
-        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
-        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
-      </div>
-      <div class="menu_top">
-        <ul>
-          <li><a href="index.html">STRONA GŁÓWNA</a></li>
-          <li><a href="html.html" id="a_active">HTML</a></li>
-          <li><a href="css.html">CSS</a></li>
-        </ul>
-      </div>
-    </header>
-    <div class="box">
-      <div class="left">
-        <div class="menu_left">
-          <h4>HTML</h4>
-          <ul>
-            <li><a href="html.html" id="a_active2">Czym jest HTML?</a></li>
-            <li><a href="struktura.html">Podstawowa struktura</a></li>
-            <li><a href="znaczniki.html">Znaczniki</a></li>
-            <li><a href="komentarze.html">Komentarze</a></li>
-            <li><a href="meta.html">&lt;meta&gt; i &lt;title&gt;</a></li>
-            <li><a href="listy.html">Listy</a></li>
-            <li><a href="zagniezdzona.html">Lista zagnieżdżona</a></li>
-            <li><a href="definicji.html">Lista definicji</a></li>
-            <li><a href="grafika.html">Grafika</a></li>
-            <li><a href="hiperlacza.html">Hiperłącza i kotwice</a></li>
-            <li><a href="mapa.html">Mapa odsyłaczy</a></li>
-            <li><a href="tabele.html">Tabele</a></li>
-            <li><a href="uklady.html">Układy stron</a></li>
-            <li><a href="pionowe.html">Menu pionowe</a></li>
-            <li><a href="poziome.html">Menu poziome</a></li>
-            <li><a href="formularze.html">Formularze</a></li>
-            <li><a href="grupowany.html">Formularz grupowany</a></li>
-            <li><a href="plynne.html">Układy płynne</a></li>
-            <li><a href="multimedia.html">Multimedia</a></li>
-            <li><a href="hybrydowe.html">Układy hybrydowe</a></li>
-          </ul>
-      </div>
-    </div>
-      <div class="main">
-        <h2>Czym jest HTML?</h2>
-        <p>
-          <strong>HTML (ang. HyperText Markup Language)</strong> - hipertekstowy język znaczników,
-          wykorzystywany do tworzenia dokumentów hipertekstowych. <br/><br/>
-          <ul>
-            <li>HTML opisuje strukturę stron internetowych używając znaczników</li>
-            <li>Elementy HTML są blokami budującymi strony internetowe</li>
-            <li>Poszczególne elementy HTML są reprezentowane za pomocą znaczników</li>
-            <li>Przeglądarki nie wyświetlają znaczników, ale używają ich do formatowania zawartości pliku .html</li>
-          </ul>
-      </div>
-    </div>
-    <footer>
-      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
-      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
-    </footer>
-  </div>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Damian Zapalski" />
+		<meta name="generator" content="Atom" />
+		<meta name="keywords" content="kurs, html, css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kurs HTML &amp; CSS</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+		<script src="./js/script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="banner">
+					<a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a
+					><br />
+					<p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p>
+					<span class="green">ZIELONYCH</span> <img src="img/html5.png" alt="html5" /><img src="img/css3.png" alt="css3" />
+				</div>
+				<div class="menu_top">
+					<ul>
+						<li><a href="index.html">STRONA GŁÓWNA</a></li>
+						<li><a href="html.html" id="a_active">HTML</a></li>
+						<li><a href="css.html">CSS</a></li>
+					</ul>
+				</div>
+			</header>
+			<div class="box">
+				<div class="left">
+					<div class="menu_left">
+						<div class="mobileMenuTrigger">
+							<div class="line"></div>
+						</div>
+						<h4>HTML</h4>
+						<ul>
+							<li><a href="html.html" id="a_active2">Czym jest HTML?</a></li>
+							<li><a href="struktura.html">Podstawowa struktura</a></li>
+							<li><a href="znaczniki.html">Znaczniki</a></li>
+							<li><a href="komentarze.html">Komentarze</a></li>
+							<li><a href="meta.html">&lt;meta&gt; i &lt;title&gt;</a></li>
+							<li><a href="listy.html">Listy</a></li>
+							<li><a href="zagniezdzona.html">Lista zagnieżdżona</a></li>
+							<li><a href="definicji.html">Lista definicji</a></li>
+							<li><a href="grafika.html">Grafika</a></li>
+							<li><a href="hiperlacza.html">Hiperłącza i kotwice</a></li>
+							<li><a href="mapa.html">Mapa odsyłaczy</a></li>
+							<li><a href="tabele.html">Tabele</a></li>
+							<li><a href="uklady.html">Układy stron</a></li>
+							<li><a href="pionowe.html">Menu pionowe</a></li>
+							<li><a href="poziome.html">Menu poziome</a></li>
+							<li><a href="formularze.html">Formularze</a></li>
+							<li><a href="grupowany.html">Formularz grupowany</a></li>
+							<li><a href="plynne.html">Układy płynne</a></li>
+							<li><a href="multimedia.html">Multimedia</a></li>
+							<li><a href="hybrydowe.html">Układy hybrydowe</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="main">
+					<h2>Czym jest HTML?</h2>
+					<p>
+						<strong>HTML (ang. HyperText Markup Language)</strong> - hipertekstowy język znaczników, wykorzystywany do tworzenia dokumentów
+						hipertekstowych. <br /><br />
+					</p>
+
+					<ul>
+						<li>HTML opisuje strukturę stron internetowych używając znaczników</li>
+						<li>Elementy HTML są blokami budującymi strony internetowe</li>
+						<li>Poszczególne elementy HTML są reprezentowane za pomocą znaczników</li>
+						<li>Przeglądarki nie wyświetlają znaczników, ale używają ich do formatowania zawartości pliku .html</li>
+					</ul>
+				</div>
+			</div>
+			<footer>
+				COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br />
+				<p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+			</footer>
+		</div>
+	</body>
 </html>

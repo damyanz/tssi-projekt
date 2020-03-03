@@ -1,104 +1,124 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="author" content="Damian Zapalski" />
-  <meta name="generator" content="Atom" />
-  <meta name="keywords" content="kurs, html, css" />
-  <title>Kurs HTML &amp; CSS</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="banner">
-        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
-        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
-        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
-      </div>
-      <div class="menu_top">
-        <ul>
-          <li><a href="index.html">STRONA GŁÓWNA</a></li>
-          <li><a href="html.html">HTML</a></li>
-          <li><a href="css.html" id="a_active">CSS</a></li>
-        </ul>
-      </div>
-    </header>
-    <div class="box">
-      <div class="left">
-        <div class="menu_left">
-          <h4>CSS</h4>
-          <ul>
-            <li><a href="css.html">Czym jest CSS?</a></li>
-            <li><a href="selektory.html"  id="a_active2">Selektory</a></li>
-            <li><a href="osadzanie.html">Osadzanie CSS'a</a></li>
-            <li><a href="przyklady.html">Przykłady</a></li>
-            <li><a href="kaskadowosc.html">Kaskadowość</a></li>
-            <li><a href="komentarzecss.html">Komentarze</a></li>
-            <li><a href="pudelko.html">Model pudełkowy</a></li>
-            <li><a href="pozycjonowanie.html">Pozycjonowanie</a></li>
-            <li><a href="tlo.html">Grafika jako tło</a></li>
-            <li><a href="gradient.html">Gradienty</a></li>
-            <li><a href="przeksztalcenia.html">Przekształcenia</a></li>
-            <li><a href="animacje.html">Animacje</a></li>
-          </ul>
-      </div>
-    </div>
-      <div class="main">
-        <h2>Selektory</h2>
-        <div class="example">
-          <h3>Selektor elementu</h3>
-          Odnosi się do zawartości między danymi znacznikami
-          <pre class="half2">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Damian Zapalski" />
+		<meta name="generator" content="Atom" />
+		<meta name="keywords" content="kurs, html, css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kurs HTML &amp; CSS</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+		<script src="./js/script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="banner">
+					<a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a
+					><br />
+					<p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p>
+					<span class="green">ZIELONYCH</span> <img src="img/html5.png" alt="html5" /><img src="img/css3.png" alt="css3" />
+				</div>
+				<div class="menu_top">
+					<ul>
+						<li><a href="index.html">STRONA GŁÓWNA</a></li>
+						<li><a href="html.html">HTML</a></li>
+						<li><a href="css.html" id="a_active">CSS</a></li>
+					</ul>
+				</div>
+			</header>
+			<div class="box">
+				<div class="left">
+					<div class="menu_left">
+						<div class="mobileMenuTrigger">
+							<div class="line"></div>
+						</div>
+						<h4>CSS</h4>
+						<ul>
+							<li><a href="css.html">Czym jest CSS?</a></li>
+							<li><a href="selektory.html" id="a_active2">Selektory</a></li>
+							<li><a href="osadzanie.html">Osadzanie CSS'a</a></li>
+							<li><a href="przyklady.html">Przykłady</a></li>
+							<li><a href="kaskadowosc.html">Kaskadowość</a></li>
+							<li><a href="komentarzecss.html">Komentarze</a></li>
+							<li><a href="pudelko.html">Model pudełkowy</a></li>
+							<li><a href="pozycjonowanie.html">Pozycjonowanie</a></li>
+							<li><a href="tlo.html">Grafika jako tło</a></li>
+							<li><a href="gradient.html">Gradienty</a></li>
+							<li><a href="przeksztalcenia.html">Przekształcenia</a></li>
+							<li><a href="animacje.html">Animacje</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="main">
+					<h2>Selektory</h2>
+					<div class="example">
+						<h3>Selektor elementu</h3>
+						Odnosi się do zawartości między danymi znacznikami
+						<div class="preWrapper half2">
+							<pre>
 p{
   text-align: center;
   color: red;
-}</pre>
-        </div>
-        <div class="example">
-          <h3>Oznaczanie elementu identyfikatorem i klasą</h3>
-          <span style="color:red;">Identyfikator jest unikalny!!! Można go przypisać tylko do jednego elementu</span>
-          <pre>
-&lt;p id="akapit"&gt;Lorem ipsum...&lt;/p&gt;</pre>
+}</pre
+							>
+						</div>
+					</div>
+					<div class="example">
+						<h3>Oznaczanie elementu identyfikatorem i klasą</h3>
+						<span style="color:red;">Identyfikator jest unikalny!!! Można go przypisać tylko do jednego elementu</span>
+						<div class="preWrapper"><pre>&lt;p id="akapit"&gt;Lorem ipsum...&lt;/p&gt;</pre></div>
 
-        Klasę możemy przypisać do kilku elementów
-        <pre>
+						Klasę możemy przypisać do kilku elementów
+						<div class="preWrapper">
+							<pre>
 &lt;li class="lista"&gt;Lorem&lt;/li&gt;
 &lt;li class="lista"&gt;ipsum&lt;/li&gt;
 &lt;li class="lista"&gt;dolor&lt;/li&gt;
-&lt;li class="lista"&gt;sit&lt;/li&gt;</pre>
-      </div>
-        <div class="example">
-          <h3>Selektor identyfikatora</h3>
-          Odnosi się do elementu oznaczonego identyfikatorem. <span class="tag">id="..."</span><br />
-          <pre class="half2">
+&lt;li class="lista"&gt;sit&lt;/li&gt;</pre
+							>
+						</div>
+					</div>
+					<div class="example">
+						<h3>Selektor identyfikatora</h3>
+						Odnosi się do elementu oznaczonego identyfikatorem. <span class="tag">id="..."</span><br />
+						<div class="preWrapper half2">
+							<pre>
 #nazwa_identyfikatora{
   text-align: center;
   color: red;
-}</pre>
-        </div>
-        <div class="example">
-          <h3>Selektor klasy</h3>
-          Odnosi się do wszystkich elementów oznaczonych daną klasą. <span class="tag">class="..."</span>
-          <pre class="half2">
+}</pre
+							>
+						</div>
+					</div>
+					<div class="example">
+						<h3>Selektor klasy</h3>
+						Odnosi się do wszystkich elementów oznaczonych daną klasą. <span class="tag">class="..."</span>
+						<div class="preWrapper half2">
+							<pre>
 .nazwa_klasy{
   text-align: center;
   color: red;
-}</pre>
-Można także określić element działania selektora klasy
-<pre class="half2">
+}</pre
+							>
+						</div>
+						Można także określić element działania selektora klasy
+						<div class="preWrapper half2">
+							<pre>
 p.nazwa_klasy{
   text-align: center;
   color: red;
-}</pre>
-        </div>
-      </div>
-      </div>
-    <footer>
-      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
-      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
-    </footer>
-  </div>
-</body>
+}</pre
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br />
+				<p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+			</footer>
+		</div>
+	</body>
 </html>

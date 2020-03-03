@@ -1,62 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="author" content="Damian Zapalski" />
-  <meta name="generator" content="Atom" />
-  <meta name="keywords" content="kurs, html, css" />
-  <title>Kurs HTML &amp; CSS</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="banner">
-        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
-        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
-        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
-      </div>
-      <div class="menu_top">
-        <ul>
-          <li><a href="index.html" id="a_active">STRONA GŁÓWNA</a></li>
-          <li><a href="html.html">HTML</a></li>
-          <li><a href="css.html">CSS</a></li>
-        </ul>
-      </div>
-    </header>
-    <div class="box">
-      <div class="left">
-        <div class="menu_left">
-          <h4>KURS HTML &amp; CSS</h4>
-          <ul>
-            <li><a href="index.html">Wprowadzenie</a></li>
-            <li><a href="edytor.html">Od czego zacząć</a></li>
-            <li><a href="validator.html" id="a_active2">Validator</a></li>
-            <li><a href="oznaczenia.html">Oznaczenia</a></li>
-            <li><a href="zasady.html">5 zasad HTML</a></li>
-            <li><a href="encje.html">Encje</a></li>
-          </ul>
-      </div>
-    </div>
-      <div class="main">
-        <h2>Validator</h2>
-        <p>
-        <strong>Validator</strong> - rodzaj parsera, sprawdzający poprawność składniową dokumentów HTML.<br /><br />
-        <strong>Zawsze używaj go do sprawdzenia czy twoja strona nie zawiera błędów!!!</strong><br /><br />
-        <a href="img/validatorw3c.png"><img src="img/validatorw3c.png" alt="validator w3c" style="width:400px;" /></a><br />
-        Najlepszym validatorem jest <a href="https://validator.w3.org/">Validator W3C</a>. Stworzyła go organizacja <strong>W3C</strong>, która zajmuje się ustanawianiem standardów pisania i przesyłu stron WWW.
-        Jest to validator online, który pozwala na sprawdzenie dokumentu poprzez przesłanie pliku, bądź wklejenie kodu.<br /><br />
-        <a href="img/cse.png"><img src="img/cse.png" alt="cse" style="width:400px;" /></a><br />
-        Alternatywą offline dla validatora W3C jest <a href="https://www.htmlvalidator.com/">CSE HTML Validator Lite</a>.<br /><br />
-        <h2>Validator CSS</h2>
-        <p>Istnieje również validator dokumentów CSS - <a href="https://jigsaw.w3.org/css-validator/">https://jigsaw.w3.org/css-validator/</a>
-      </div>
-    </div>
-    <footer>
-      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
-      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
-    </footer>
-  </div>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Damian Zapalski" />
+		<meta name="generator" content="Atom" />
+		<meta name="keywords" content="kurs, html, css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kurs HTML &amp; CSS</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+		<script src="./js/script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="banner">
+					<a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a
+					><br />
+					<p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p>
+					<span class="green">ZIELONYCH</span> <img src="img/html5.png" alt="html5" /><img src="img/css3.png" alt="css3" />
+				</div>
+				<div class="menu_top">
+					<ul>
+						<li><a href="index.html" id="a_active">STRONA GŁÓWNA</a></li>
+						<li><a href="html.html">HTML</a></li>
+						<li><a href="css.html">CSS</a></li>
+					</ul>
+				</div>
+			</header>
+			<div class="box">
+				<div class="left">
+					<div class="menu_left">
+						<div class="mobileMenuTrigger">
+							<div class="line"></div>
+						</div>
+						<h4>KURS HTML &amp; CSS</h4>
+						<ul>
+							<li><a href="index.html">Wprowadzenie</a></li>
+							<li><a href="edytor.html">Od czego zacząć</a></li>
+							<li><a href="validator.html" id="a_active2">Validator</a></li>
+							<li><a href="oznaczenia.html">Oznaczenia</a></li>
+
+							<li><a href="encje.html">Encje</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="main">
+					<h2>Validator</h2>
+					<p>
+						<strong>Validator</strong> - rodzaj parsera, sprawdzający poprawność składniową dokumentów HTML.<br /><br />
+						<strong>Zawsze używaj go do sprawdzenia czy twoja strona nie zawiera błędów!!!</strong><br /><br />
+						<a href="img/validatorw3c.png"><img src="img/validatorw3c.png" alt="validator w3c" style="max-width: 400px; width: 100%;"/></a><br />
+						Najlepszym validatorem jest <a href="https://validator.w3.org/">Validator W3C</a>. Stworzyła go organizacja <strong>W3C</strong>, która
+						zajmuje się ustanawianiem standardów pisania i przesyłu stron WWW. Jest to validator online, który pozwala na sprawdzenie dokumentu
+						poprzez przesłanie pliku, bądź wklejenie kodu.<br /><br />
+						<a href="img/cse.png"><img src="img/cse.png" alt="cse" style="max-width: 400px; width: 100%;"/></a><br />
+						Alternatywą offline dla validatora W3C jest <a href="https://www.htmlvalidator.com/">CSE HTML Validator Lite</a>.<br /><br />
+					</p>
+
+					<h2>Validator CSS</h2>
+					<p>Istnieje również validator dokumentów CSS - <a href="https://jigsaw.w3.org/css-validator/">https://jigsaw.w3.org/css-validator/</a></p>
+				</div>
+			</div>
+			<footer>
+				COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br />
+				<p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+			</footer>
+		</div>
+	</body>
 </html>

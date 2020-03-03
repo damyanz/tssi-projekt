@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="author" content="Damian Zapalski" />
-  <meta name="generator" content="Atom" />
-  <meta name="keywords" content="kurs, html, css" />
-  <title>Kurs HTML &amp; CSS</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="banner">
-        <a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a><br/>
-        <p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p> <span class="green">ZIELONYCH</span>
-        <img src="img/html5.png" alt="html5" style="right:60px;" /><img src="img/css3.png" alt="css3" />
-      </div>
-      <div class="menu_top">
-        <ul>
-          <li><a href="index.html">STRONA GŁÓWNA</a></li>
-          <li><a href="html.html">HTML</a></li>
-          <li><a href="css.html" id="a_active">CSS</a></li>
-        </ul>
-      </div>
-    </header>
-    <div class="box">
-      <div class="left">
-        <div class="menu_left">
-          <h4>CSS</h4>
-          <ul>
-            <li><a href="css.html">Czym jest CSS?</a></li>
-            <li><a href="selektory.html">Selektory</a></li>
-            <li><a href="osadzanie.html"  id="a_active2">Osadzanie CSS'a</a></li>
-            <li><a href="przyklady.html">Przykłady</a></li>
-            <li><a href="kaskadowosc.html">Kaskadowość</a></li>
-            <li><a href="komentarzecss.html">Komentarze</a></li>
-            <li><a href="pudelko.html">Model pudełkowy</a></li>
-            <li><a href="pozycjonowanie.html">Pozycjonowanie</a></li>
-            <li><a href="tlo.html">Grafika jako tło</a></li>
-            <li><a href="gradient.html">Gradienty</a></li>
-            <li><a href="przeksztalcenia.html">Przekształcenia</a></li>
-            <li><a href="animacje.html">Animacje</a></li>
-          </ul>
-      </div>
-    </div>
-      <div class="main">
-        <h2>Osadzanie CSS'a</h2>
-        <p>Istnieją 3 sposoby osadzania kaskadowych arkuszów stylów w dokumencie HTML:<br /><br />
-          <strong>1. Styl lokalny</strong> - wewnątrz dowolnego znacznika
-          <div class="example">
-            <h3>Lokalny</h3>
-            <pre>
-&lt;selektor style="cecha: wartość; cecha2: wartość2;..."&gt;...&lt;/selektor&gt;</pre>
-          </div>
-          <span style="color:red;">Styl lokalny formatuje tylko ten pojedynczy element, w którym został osadzony</span><br /><br />
-          <a href="selektory.html">selektor</a><br/>
-          <span class="tag">style="..."</span> - Między cudzysłowy wpisujemy kod CSS<br />
-          <span class="tag">cecha</span> - właściwość formatowana, np. kolor tekstu, tło, ramka, marginesy<br />
-          <span class="tag">wartość</span> - wartość atrybutu, np. dla koloru tekstu: red, dla marginesów: 5px<br /><br />
-          <strong>2. Styl wewnętrzny</strong> - wewnątrz pliku html, pomiędzy znacznikami <span class="tag">&lt;style&gt;</span> w sekcji <span class="tag">&lt;head&gt;</span>
-          <div class="example">
-            <h3>Wewnętrzny</h3>
-            <pre>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Damian Zapalski" />
+		<meta name="generator" content="Atom" />
+		<meta name="keywords" content="kurs, html, css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kurs HTML &amp; CSS</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="icon" type="image/png" href="img/favicon.ico" sizes="16x16" />
+		<script src="./js/script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="banner">
+					<a class="w3dz-logo" href="index.html">w3dz<span class="dotpl">.pl</span></a
+					><br />
+					<p>TWORZENIE STATYCZNYCH STRON INTERNETOWYCH DLA</p>
+					<span class="green">ZIELONYCH</span> <img src="img/html5.png" alt="html5" /><img src="img/css3.png" alt="css3" />
+				</div>
+				<div class="menu_top">
+					<ul>
+						<li><a href="index.html">STRONA GŁÓWNA</a></li>
+						<li><a href="html.html">HTML</a></li>
+						<li><a href="css.html" id="a_active">CSS</a></li>
+					</ul>
+				</div>
+			</header>
+			<div class="box">
+				<div class="left">
+					<div class="menu_left">
+						<div class="mobileMenuTrigger">
+							<div class="line"></div>
+						</div>
+						<h4>CSS</h4>
+						<ul>
+							<li><a href="css.html">Czym jest CSS?</a></li>
+							<li><a href="selektory.html">Selektory</a></li>
+							<li><a href="osadzanie.html" id="a_active2">Osadzanie CSS'a</a></li>
+							<li><a href="przyklady.html">Przykłady</a></li>
+							<li><a href="kaskadowosc.html">Kaskadowość</a></li>
+							<li><a href="komentarzecss.html">Komentarze</a></li>
+							<li><a href="pudelko.html">Model pudełkowy</a></li>
+							<li><a href="pozycjonowanie.html">Pozycjonowanie</a></li>
+							<li><a href="tlo.html">Grafika jako tło</a></li>
+							<li><a href="gradient.html">Gradienty</a></li>
+							<li><a href="przeksztalcenia.html">Przekształcenia</a></li>
+							<li><a href="animacje.html">Animacje</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="main">
+					<h2>Osadzanie CSS'a</h2>
+					<p>
+						Istnieją 3 sposoby osadzania kaskadowych arkuszów stylów w dokumencie HTML:<br /><br />
+						<strong>1. Styl lokalny</strong> - wewnątrz dowolnego znacznika
+					</p>
+
+					<div class="example">
+						<h3>Lokalny</h3>
+						<div class="preWrapper"><pre>&lt;selektor style="cecha: wartość; cecha2: wartość2;..."&gt;...&lt;/selektor&gt;</pre></div>
+					</div>
+					<span style="color:red;">Styl lokalny formatuje tylko ten pojedynczy element, w którym został osadzony</span><br /><br />
+					<a href="selektory.html">selektor</a><br />
+					<span class="tag">style="..."</span> - Między cudzysłowy wpisujemy kod CSS<br />
+					<span class="tag">cecha</span> - właściwość formatowana, np. kolor tekstu, tło, ramka, marginesy<br />
+					<span class="tag">wartość</span> - wartość atrybutu, np. dla koloru tekstu: red, dla marginesów: 5px<br /><br />
+					<strong>2. Styl wewnętrzny</strong> - wewnątrz pliku html, pomiędzy znacznikami <span class="tag">&lt;style&gt;</span> w sekcji
+					<span class="tag">&lt;head&gt;</span>
+					<div class="example">
+						<h3>Wewnętrzny</h3>
+						<div class="preWrapper">
+							<pre>
 &lt;head&gt;
   	[...]
 &lt;style&gt;
@@ -79,21 +89,30 @@
     cecha2: wartość2;
   }
 &lt;/style&gt;
-&lt;/head&gt;</pre></div>
-          <span style="color:red;">Styl wewnętrzny formatuje każdy element tego samego typu w obrębie dokumentu, w którym został osadzony</span><br /><br />
-          <strong>3. Styl zewnętrzny</strong> - osobny plik z rozszerzeniem .css dołączony do dokumentu poprzez linijkę umieszczoną w sekcji <span class="tag">&lt;head&gt;</span>
-          <div class="example">
-            <h3>Dołączanie zewnętrznego arkusza stylów</h3>
-            <pre>
+&lt;/head&gt;</pre
+							>
+						</div>
+					</div>
+					<span style="color:red;">Styl wewnętrzny formatuje każdy element tego samego typu w obrębie dokumentu, w którym został osadzony</span
+					><br /><br />
+					<strong>3. Styl zewnętrzny</strong> - osobny plik z rozszerzeniem .css dołączony do dokumentu poprzez linijkę umieszczoną w sekcji
+					<span class="tag">&lt;head&gt;</span>
+					<div class="example">
+						<h3>Dołączanie zewnętrznego arkusza stylów</h3>
+						<div class="preWrapper">
+							<pre>
 &lt;head&gt;
   [...]
   &lt;link rel="Stylesheet" type="text/css" href="style.css" /&gt;
-&lt;/head&gt;</pre>
-          </div>
-          <span class="tag">href="..."</span> - ścieżka do arkusza
-          <div class="example">
-            <h3>Zewnętrzny - plik style.css</h3>
-            <pre class="half2">
+&lt;/head&gt;</pre
+							>
+						</div>
+					</div>
+					<span class="tag">href="..."</span> - ścieżka do arkusza
+					<div class="example">
+						<h3>Zewnętrzny - plik style.css</h3>
+						<div class="preWrapper half2">
+							<pre>
 selektor{
   cecha: wartość;
   cecha2: wartość2;
@@ -105,17 +124,26 @@ selektor2{
 selektor3, selektor 4{
   cecha: wartość;
   cecha2: wartość2;
-}</pre></div>
-          <span style="color:red;">Styl wewnętrzny formatuje każdy element tego samego typu w obrębię wszystkich dokumentów do których został dołączony</span><br /><br /><hr />
-          <h2 style="color:red;font-size:1.2em;text-align:center;">ZAWSZE PAMIĘTAJ O ŚREDNIKU (;) NA KOŃCU WARTOŚCI!!!</h2><hr /><br />
-          <em>Więcej o składni CSS <a href="https://www.w3schools.com/css/css_syntax.asp">https://www.w3schools.com/css/css_syntax.asp</a></em><br />
-          <em>Więcej o osadzaniu CSS <a href="https://www.w3schools.com/css/css_howto.asp">https://www.w3schools.com/css/css_howto.asp</a></em>
-      </div>
-    </div>
-    <footer>
-      COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br/>
-      <p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
-    </footer>
-  </div>
-</body>
+}</pre
+							>
+						</div>
+					</div>
+					<span style="color:red;"
+						>Styl wewnętrzny formatuje każdy element tego samego typu w obrębię wszystkich dokumentów do których został dołączony</span
+					><br /><br />
+					<hr />
+					<h2 style="color:red;font-size:1.2em;text-align:center;">ZAWSZE PAMIĘTAJ O ŚREDNIKU (;) NA KOŃCU WARTOŚCI!!!</h2>
+					<hr />
+					<br />
+					<em>Więcej o składni CSS <a href="https://www.w3schools.com/css/css_syntax.asp">https://www.w3schools.com/css/css_syntax.asp</a></em
+					><br />
+					<em>Więcej o osadzaniu CSS <a href="https://www.w3schools.com/css/css_howto.asp">https://www.w3schools.com/css/css_howto.asp</a></em>
+				</div>
+			</div>
+			<footer>
+				COPYRIGHT &copy; DAMIAN ZAPALSKI | 2017<br />
+				<p>Strona wykonana w ramach projektu przedmiotowego TSSI</p>
+			</footer>
+		</div>
+	</body>
 </html>
